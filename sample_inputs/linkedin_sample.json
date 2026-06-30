@@ -1,0 +1,39 @@
+[
+  {
+    "profile_id": "LI-001",
+    "full_name": "Alice Chen",
+    "email": "alice.chen@example.com",
+    "headline": "Senior Software Engineer at Acme Corp | Python & Cloud Expert",
+    "current_company": "Acme Corp",
+    "current_title": "Senior Software Engineer",
+    "location": "San Francisco Bay Area",
+    "country": "United States",
+    "industry": "Technology",
+    "connections": 500,
+    "skills": ["Python", "Django", "React", "AWS", "Docker", "Kubernetes", "System Design"],
+    "years_of_experience": 8,
+    "education": "M.S. Computer Science, Stanford University; B.S. Computer Science, UC Berkeley",
+    "certifications": ["AWS Solutions Architect Associate", "AWS Developer Associate"],
+    "linkedin_url": "https://www.linkedin.com/in/alicechen",
+    "summary": "Passionate software engineer with 8 years of experience building scalable web applications and cloud infrastructure. Led migration of monolithic architecture to microservices at Acme Corp, reducing deployment time by 70%.",
+    "last_updated": "2024-06"
+  },
+  {
+    "profile_id": "LI-002",
+    "full_name": "Diana Patel",
+    "email": "diana.patel@example.com",
+    "headline": "Product Manager | Building Products Users Love",
+    "current_company": "GlobalSoft Technologies",
+    "current_title": "Senior Product Manager",
+    "location": "Bangalore, Karnataka, India",
+    "country": "India",
+    "industry": "Information Technology",
+    "connections": 1200,
+    "skills": ["Product Management", "Agile", "Scrum", "SQL", "Figma", "A/B Testing", "Roadmapping"],
+    "years_of_experience": 10,
+    "education": "MBA, IIM Bangalore; B.Tech Computer Science, IIT Delhi",
+    "linkedin_url": "https://www.linkedin.com/in/dianapatel",
+    "summary": "Experienced product manager with 10+ years building B2B SaaS products. Currently leading a team of 15 at GlobalSoft, driving 40% YoY growth.",
+    "last_updated": "2024-05"
+  }
+]

@@ -1,0 +1,34 @@
+Candidate: Alice Chen
+Email: alice.chen@example.com
+Phone: 415-555-0101
+Role: Senior Software Engineer
+Company: Acme Corp
+Location: San Francisco
+
+Spoke with Alice on Jan 10. Very strong Python background. Led the migration from monolith to microservices at Acme. Impressive system design skills. She mentioned being interested in tech lead roles. Currently earning around $180k. Open to remote positions. Has AWS certifications.
+
+Skills: Python, System Design, Microservices, AWS, Leadership
+
+---
+
+Candidate: Bob Martinez
+Email: bob.martinez@example.com
+Title: Data Scientist
+Company: DataFlow
+
+Interviewed Bob on Feb 5. PhD from Columbia in Statistics. Very strong in ML/AI space. Published 3 papers on NLP. Currently at DataFlow working on recommendation systems. Interested in moving to a larger company for more impact. Salary expectation: $200k+.
+
+Skills: Machine Learning, NLP, Deep Learning, Python, Statistics
+
+---
+
+Name: Frank Wilson
+Email: frank.w@example.com
+Company: Acme Corp
+Position: Junior Developer
+Location: Austin, Texas
+Experience: 1 year
+
+Just graduated from UT Austin last year. Started at Acme as junior dev. Working primarily with Java and Spring Boot. Eager to learn, but needs mentorship. Good cultural fit.
+
+Skills: Java, Spring, MySQL, Git

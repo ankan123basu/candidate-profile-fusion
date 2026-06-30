@@ -1,0 +1,471 @@
+[
+  {
+    "full_name": "Ankan Basu",
+    "primary_email": "ankanbasu10@gmail.com",
+    "phone": "+916296441903",
+    "skills": [
+      "Data Structures",
+      "Jenkins",
+      "MySQL",
+      "Linux",
+      "Git",
+      "PHP",
+      "DevOps",
+      "HTML",
+      "CSS",
+      "React",
+      "Java",
+      "Python",
+      "Express",
+      "Spring",
+      "Docker",
+      "JavaScript",
+      "REST",
+      "PostgreSQL",
+      "MongoDB",
+      "Node.js"
+    ],
+    "_confidence": {
+      "overall": 0.415,
+      "fields": {
+        "full_name": {
+          "score": 0.36,
+          "source_count": 1,
+          "has_conflict": false
+        },
+        "emails": {
+          "score": 0.48,
+          "source_count": 1,
+          "has_conflict": false
+        },
+        "phones": {
+          "score": 0.48,
+          "source_count": 1,
+          "has_conflict": false
+        },
+        "location": {
+          "score": 0.36,
+          "source_count": 1,
+          "has_conflict": false
+        },
+        "skills": {
+          "score": 0.36,
+          "source_count": 1,
+          "has_conflict": false
+        },
+        "education": {
+          "score": 0.36,
+          "source_count": 1,
+          "has_conflict": false
+        },
+        "links": {
+          "score": 0.48,
+          "source_count": 1,
+          "has_conflict": false
+        }
+      }
+    }
+  },
+  {
+    "full_name": "Alice Chen",
+    "primary_email": "alice.chen@example.com",
+    "phone": "+14155550101",
+    "skills": [
+      "Python",
+      "Django",
+      "React",
+      "PostgreSQL",
+      "AWS",
+      "Docker",
+      "Kubernetes",
+      "System Design",
+      "Microservices",
+      "Jenkins",
+      "Linux",
+      "Redis",
+      "CI/CD",
+      "Git",
+      "TypeScript",
+      "Kafka",
+      "JavaScript"
+    ],
+    "_confidence": {
+      "overall": 0.946,
+      "fields": {
+        "full_name": {
+          "score": 1.0,
+          "source_count": 4,
+          "has_conflict": false
+        },
+        "emails": {
+          "score": 1.0,
+          "source_count": 4,
+          "has_conflict": true
+        },
+        "phones": {
+          "score": 1.0,
+          "source_count": 4,
+          "has_conflict": true
+        },
+        "headline": {
+          "score": 0.85,
+          "source_count": 3,
+          "has_conflict": true
+        },
+        "location": {
+          "score": 0.85,
+          "source_count": 3,
+          "has_conflict": true
+        },
+        "skills": {
+          "score": 1.0,
+          "source_count": 4,
+          "has_conflict": true
+        },
+        "years_experience": {
+          "score": 1.0,
+          "source_count": 3,
+          "has_conflict": false
+        },
+        "education": {
+          "score": 0.8,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "experience": {
+          "score": 0.85,
+          "source_count": 3,
+          "has_conflict": true
+        },
+        "links": {
+          "score": 0.85,
+          "source_count": 3,
+          "has_conflict": true
+        }
+      }
+    }
+  },
+  {
+    "full_name": "Bob Martinez",
+    "primary_email": "bob.martinez@example.com",
+    "phone": "+12125550199",
+    "skills": [
+      "Python",
+      "Machine Learning",
+      "TensorFlow",
+      "PyTorch",
+      "SQL",
+      "Pandas",
+      "NumPy",
+      "NLP",
+      "Deep Learning"
+    ],
+    "_confidence": {
+      "overall": 0.865,
+      "fields": {
+        "full_name": {
+          "score": 1.0,
+          "source_count": 3,
+          "has_conflict": false
+        },
+        "emails": {
+          "score": 0.9,
+          "source_count": 3,
+          "has_conflict": true
+        },
+        "phones": {
+          "score": 0.8,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "headline": {
+          "score": 0.85,
+          "source_count": 3,
+          "has_conflict": true
+        },
+        "location": {
+          "score": 0.75,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "skills": {
+          "score": 0.9,
+          "source_count": 3,
+          "has_conflict": true
+        },
+        "years_experience": {
+          "score": 0.75,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "education": {
+          "score": 0.85,
+          "source_count": 1,
+          "has_conflict": false
+        },
+        "experience": {
+          "score": 0.85,
+          "source_count": 3,
+          "has_conflict": true
+        },
+        "links": {
+          "score": 0.8,
+          "source_count": 1,
+          "has_conflict": false
+        }
+      }
+    }
+  },
+  {
+    "full_name": "Charlie Kim",
+    "primary_email": "charlie.kim@example.com",
+    "phone": "+442079460958",
+    "skills": [
+      "JavaScript",
+      "TypeScript",
+      "Node.js",
+      "React",
+      "Vue.js",
+      "MongoDB",
+      "GraphQL"
+    ],
+    "_confidence": {
+      "overall": 0.837,
+      "fields": {
+        "full_name": {
+          "score": 0.9,
+          "source_count": 2,
+          "has_conflict": false
+        },
+        "emails": {
+          "score": 0.8,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "phones": {
+          "score": 0.95,
+          "source_count": 2,
+          "has_conflict": false
+        },
+        "headline": {
+          "score": 0.75,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "location": {
+          "score": 0.75,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "skills": {
+          "score": 0.8,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "years_experience": {
+          "score": 0.9,
+          "source_count": 2,
+          "has_conflict": false
+        },
+        "education": {
+          "score": 0.85,
+          "source_count": 1,
+          "has_conflict": false
+        },
+        "experience": {
+          "score": 0.75,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "links": {
+          "score": 0.95,
+          "source_count": 2,
+          "has_conflict": false
+        }
+      }
+    }
+  },
+  {
+    "full_name": "Eva Rodriguez",
+    "primary_email": "eva.rod@example.com",
+    "phone": "+16505550142",
+    "skills": [
+      "Kubernetes",
+      "Docker",
+      "Terraform",
+      "AWS",
+      "CI/CD",
+      "Linux",
+      "Jenkins"
+    ],
+    "_confidence": {
+      "overall": 0.827,
+      "fields": {
+        "full_name": {
+          "score": 0.9,
+          "source_count": 2,
+          "has_conflict": false
+        },
+        "emails": {
+          "score": 0.8,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "phones": {
+          "score": 0.8,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "headline": {
+          "score": 0.75,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "location": {
+          "score": 0.75,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "skills": {
+          "score": 0.8,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "years_experience": {
+          "score": 0.9,
+          "source_count": 2,
+          "has_conflict": false
+        },
+        "education": {
+          "score": 0.85,
+          "source_count": 1,
+          "has_conflict": false
+        },
+        "experience": {
+          "score": 0.9,
+          "source_count": 2,
+          "has_conflict": false
+        },
+        "links": {
+          "score": 0.9,
+          "source_count": 2,
+          "has_conflict": false
+        }
+      }
+    }
+  },
+  {
+    "full_name": "Diana Patel",
+    "primary_email": "diana.patel@example.com",
+    "phone": null,
+    "skills": [
+      "Agile",
+      "Scrum",
+      "SQL",
+      "Figma",
+      "R",
+      "Elasticsearch"
+    ],
+    "_confidence": {
+      "overall": 0.796,
+      "fields": {
+        "full_name": {
+          "score": 0.9,
+          "source_count": 2,
+          "has_conflict": false
+        },
+        "emails": {
+          "score": 0.75,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "headline": {
+          "score": 0.75,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "location": {
+          "score": 0.75,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "skills": {
+          "score": 0.75,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "years_experience": {
+          "score": 0.9,
+          "source_count": 2,
+          "has_conflict": false
+        },
+        "education": {
+          "score": 0.85,
+          "source_count": 1,
+          "has_conflict": false
+        },
+        "experience": {
+          "score": 0.75,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "links": {
+          "score": 0.75,
+          "source_count": 2,
+          "has_conflict": true
+        }
+      }
+    }
+  },
+  {
+    "full_name": "Frank Wilson",
+    "primary_email": "frank.w@example.com",
+    "phone": null,
+    "skills": [
+      "Java",
+      "Spring",
+      "MySQL",
+      "Git"
+    ],
+    "_confidence": {
+      "overall": 0.823,
+      "fields": {
+        "full_name": {
+          "score": 0.9,
+          "source_count": 2,
+          "has_conflict": false
+        },
+        "emails": {
+          "score": 0.75,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "headline": {
+          "score": 0.9,
+          "source_count": 2,
+          "has_conflict": false
+        },
+        "location": {
+          "score": 0.75,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "skills": {
+          "score": 0.75,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "years_experience": {
+          "score": 0.9,
+          "source_count": 2,
+          "has_conflict": false
+        },
+        "experience": {
+          "score": 0.9,
+          "source_count": 2,
+          "has_conflict": false
+        }
+      }
+    }
+  }
+]

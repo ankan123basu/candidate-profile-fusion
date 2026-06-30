@@ -1,0 +1,171 @@
+======================================================================
+PIPELINE EXPLANATION REPORT
+======================================================================
+
+1. SOURCES DETECTED
+----------------------------------------
+   - resume_pdf: 1 file(s)
+   - ats_json: 1 file(s)
+   - csv: 1 file(s)
+   - github: 1 file(s)
+   - linkedin_json: 1 file(s)
+   - notes_txt: 1 file(s)
+   - resume_docx: 1 file(s)
+   Total: 7 source files
+
+2. EXTRACTION RESULTS
+----------------------------------------
+   Raw candidate records extracted: 7
+   Total raw field values: 171
+
+3. ENTITY RESOLUTION (MERGE)
+----------------------------------------
+   Input records: 7
+   Output profiles: 7
+   Deduplication ratio: 7 -> 7 (0 duplicates merged)
+
+4. CANDIDATE PROFILES
+----------------------------------------
+   [1] Ankan Basu <ankanbasu10@gmail.com>
+       Sources: resume
+       Overall confidence: 0.415
+       Fields with conflicts: 0
+
+   [2] Alice Chen <alice.chen@example.com>
+       Sources: ats_json, csv, notes, resume
+       Overall confidence: 0.946
+       Fields with conflicts: 8
+         >> phones: 4 different values from 4 sources
+            -> ats_json (structured_parse): 4155550101
+            -> csv (structured_parse): +1-415-555-0101
+            -> notes (regex): 415-555-0101
+         >> headline: 2 different values from 3 sources
+            -> csv (structured_parse): Senior Software Engineer
+            -> ats_json (structured_parse): Senior Software Engineer
+            -> ats_json (structured_parse): Sr. Software Engineer
+         >> location: 4 different values from 3 sources
+            -> csv (structured_parse): San Francisco, CA
+            -> ats_json (structured_parse): San Francisco Bay Area
+            -> ats_json (structured_parse): San Francisco, California
+         >> skills: 5 different values from 4 sources
+            -> ats_json (structured_parse): ['Python', 'Django', 'React', 'PostgreSQL', 'AWS', 'Docker']
+            -> csv (structured_parse): ['Python', 'Django', 'React', 'PostgreSQL', 'AWS']
+            -> ats_json (structured_parse): ['Python', 'Django', 'React', 'AWS', 'Docker', 'Kubernetes',
+         >> education: 3 different values from 2 sources
+            -> ats_json (structured_parse): M.S. Computer Science, Stanford University; B.S. Computer Sc
+            -> ats_json (structured_parse): M.S. Computer Science, Stanford University
+            -> resume (heuristic): M.S. Computer Science — Stanford University (2016); B.S. Com
+         >> experience: 2 different values from 3 sources
+            -> csv (structured_parse): Acme Corp
+            -> ats_json (structured_parse): Acme Corp
+            -> ats_json (structured_parse): Acme Corporation
+         >> links: 3 different values from 3 sources
+            -> csv (structured_parse): https://linkedin.com/in/alicechen
+            -> ats_json (structured_parse): https://www.linkedin.com/in/alicechen
+            -> ats_json (structured_parse): https://www.linkedin.com/in/alicechen
+
+   [3] Bob Martinez <bob.martinez@example.com>
+       Sources: ats_json, csv, notes
+       Overall confidence: 0.865
+       Fields with conflicts: 7
+         >> phones: 2 different values from 2 sources
+            -> ats_json (structured_parse): +1-212-555-0199
+            -> csv (structured_parse): (212) 555-0199
+         >> headline: 2 different values from 3 sources
+            -> csv (structured_parse): Data Scientist
+            -> ats_json (structured_parse): Senior Data Scientist
+            -> notes (regex): Data Scientist
+         >> location: 2 different values from 2 sources
+            -> csv (structured_parse): New York, NY
+            -> ats_json (structured_parse): New York City
+         >> skills: 3 different values from 3 sources
+            -> ats_json (structured_parse): ['Python', 'Machine Learning', 'TensorFlow', 'PyTorch', 'SQL
+            -> csv (structured_parse): ['Python', 'Machine Learning', 'TensorFlow', 'SQL', 'Pandas'
+            -> notes (regex): ['Machine Learning', 'NLP', 'Deep Learning', 'Python', 'Stat
+         >> years_experience: 2 different values from 2 sources
+            -> csv (structured_parse): 5.0
+            -> ats_json (structured_parse): 5.5
+         >> experience: 3 different values from 3 sources
+            -> csv (structured_parse): DataFlow Inc
+            -> ats_json (structured_parse): DataFlow Inc.
+            -> notes (regex): DataFlow
+
+   [4] Charlie Kim <charlie.kim@example.com>
+       Sources: ats_json, csv
+       Overall confidence: 0.837
+       Fields with conflicts: 5
+         >> headline: 2 different values from 2 sources
+            -> csv (structured_parse): Full Stack Developer
+            -> ats_json (structured_parse): Full Stack Web Developer
+         >> location: 2 different values from 2 sources
+            -> csv (structured_parse): London
+            -> ats_json (structured_parse): London, UK
+         >> skills: 2 different values from 2 sources
+            -> ats_json (structured_parse): ['JavaScript', 'TypeScript', 'Node.js', 'React', 'Vue.js', '
+            -> csv (structured_parse): ['JavaScript', 'TypeScript', 'Node.js', 'React', 'MongoDB']
+         >> experience: 2 different values from 2 sources
+            -> csv (structured_parse): TechStart Ltd
+            -> ats_json (structured_parse): TechStart Limited
+
+   [5] Eva Rodriguez <eva.rod@example.com>
+       Sources: ats_json, csv
+       Overall confidence: 0.827
+       Fields with conflicts: 5
+         >> phones: 2 different values from 2 sources
+            -> ats_json (structured_parse): +16505550142
+            -> csv (structured_parse): +1 650-555-0142
+         >> headline: 2 different values from 2 sources
+            -> csv (structured_parse): DevOps Engineer
+            -> ats_json (structured_parse): Senior DevOps Engineer
+         >> location: 2 different values from 2 sources
+            -> csv (structured_parse): San Jose, CA
+            -> ats_json (structured_parse): San Jose, California
+         >> skills: 2 different values from 2 sources
+            -> ats_json (structured_parse): ['Kubernetes', 'Docker', 'Terraform', 'AWS', 'CI/CD', 'Linux
+            -> csv (structured_parse): ['Kubernetes', 'Docker', 'Terraform', 'AWS', 'CI/CD', 'Linux
+
+   [6] Diana Patel <diana.patel@example.com>
+       Sources: ats_json, csv
+       Overall confidence: 0.796
+       Fields with conflicts: 6
+         >> headline: 2 different values from 2 sources
+            -> csv (structured_parse): Product Manager
+            -> ats_json (structured_parse): Senior Product Manager
+         >> location: 2 different values from 2 sources
+            -> csv (structured_parse): Bangalore, India
+            -> ats_json (structured_parse): Bangalore, Karnataka, India
+         >> skills: 2 different values from 2 sources
+            -> csv (structured_parse): ['Agile', 'Scrum', 'SQL', 'Figma', 'JIRA']
+            -> ats_json (structured_parse): ['Product Management', 'Agile', 'Scrum', 'SQL', 'Figma', 'A/
+         >> experience: 2 different values from 2 sources
+            -> csv (structured_parse): GlobalSoft
+            -> ats_json (structured_parse): GlobalSoft Technologies
+         >> links: 2 different values from 2 sources
+            -> csv (structured_parse): https://linkedin.com/in/dianapatel
+            -> ats_json (structured_parse): https://www.linkedin.com/in/dianapatel
+
+   [7] Frank Wilson <frank.w@example.com>
+       Sources: csv, notes
+       Overall confidence: 0.823
+       Fields with conflicts: 3
+         >> location: 2 different values from 2 sources
+            -> csv (structured_parse): Austin, TX
+            -> notes (regex): Austin, Texas
+         >> skills: 2 different values from 2 sources
+            -> csv (structured_parse): ['Java', 'Spring', 'MySQL']
+            -> notes (regex): ['Java', 'Spring', 'MySQL', 'Git']
+
+5. CONFIDENCE SUMMARY
+----------------------------------------
+   Average overall confidence: 0.787
+   Range: 0.415 - 0.946
+
+6. PROJECTION CONFIG
+----------------------------------------
+   Fields projected: 13
+   Fields: candidate_id, full_name, emails, phones, location, links, headline, years_experience, skills, experience, education, provenance, overall_confidence
+   Include confidence: False
+   Include provenance: False
+   Missing field policy: null
+
+======================================================================

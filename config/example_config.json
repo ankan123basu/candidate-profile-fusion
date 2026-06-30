@@ -1,0 +1,18 @@
+{
+  "fields": [
+    {"name": "full_name", "from": "full_name", "type": "string"},
+    {"name": "email", "from": "emails[0]", "type": "string"},
+    {"name": "phone", "from": "phones[0]", "type": "string", "normalize": true},
+    {"name": "location", "from": "location", "type": "object"},
+    {"name": "headline", "from": "headline", "type": "string"},
+    {"name": "skills", "from": "skills[].name", "type": "string[]"},
+    {"name": "experience_years", "from": "years_experience", "type": "number"},
+    {"name": "education", "from": "education", "type": "array"},
+    {"name": "links", "from": "links", "type": "object"},
+    {"name": "experience", "from": "experience", "type": "array"}
+  ],
+  "include_confidence": true,
+  "include_provenance": false,
+  "on_missing": "null",
+  "normalize_defaults": true
+}

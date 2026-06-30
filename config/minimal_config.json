@@ -1,0 +1,13 @@
+{
+  "fields": [
+    {"name": "name", "from": "full_name", "type": "string"},
+    {"name": "email", "from": "emails[0]", "type": "string"},
+    {"name": "skills", "from": "skills[].name", "type": "string[]"},
+    {"name": "headline", "from": "headline", "type": "string"},
+    {"name": "experience_years", "from": "years_experience", "type": "number"}
+  ],
+  "include_confidence": true,
+  "include_provenance": true,
+  "on_missing": "omit",
+  "normalize_defaults": true
+}

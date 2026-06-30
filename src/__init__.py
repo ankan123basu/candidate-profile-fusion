@@ -1,0 +1,1 @@
+"""Candidate data ETL pipeline."""

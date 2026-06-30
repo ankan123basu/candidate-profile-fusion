@@ -1,0 +1,697 @@
+[
+  {
+    "full_name": "Ankan Basu",
+    "email": "ankanbasu10@gmail.com",
+    "phone": "+916296441903",
+    "location": {
+      "city": "West Bengal",
+      "region": "Kolkata 721401",
+      "country": null
+    },
+    "headline": null,
+    "skills": [
+      "Linux",
+      "Python",
+      "MySQL",
+      "HTML",
+      "Jenkins",
+      "Data Structures",
+      "Docker",
+      "CSS",
+      "PHP",
+      "JavaScript",
+      "React",
+      "Spring",
+      "MongoDB",
+      "Java",
+      "Express",
+      "PostgreSQL",
+      "Node.js",
+      "Git",
+      "REST",
+      "DevOps"
+    ],
+    "experience_years": null,
+    "education": [
+      {
+        "institution": "Lovely Professional University 2023 – Present",
+        "degree": null,
+        "field": null,
+        "end_year": null
+      },
+      {
+        "institution": "Punjab",
+        "degree": "Bachelor of Technology - Computer Science and Engineering — CGPA: 9.04 Phagwara",
+        "field": null,
+        "end_year": null
+      },
+      {
+        "institution": "Contai Public School 2021 - 2022",
+        "degree": null,
+        "field": null,
+        "end_year": null
+      },
+      {
+        "institution": "Intermediate (class 12)",
+        "degree": "ISC",
+        "field": null,
+        "end_year": null
+      },
+      {
+        "institution": "West Bengal",
+        "degree": "Percentage: 97% Contai",
+        "field": null,
+        "end_year": null
+      }
+    ],
+    "links": {
+      "linkedin": "https://linkedin.com/in/ankanbasu10",
+      "github": "https://github.com/ankan123basu/",
+      "portfolio": null,
+      "other": []
+    },
+    "experience": null,
+    "_confidence": {
+      "overall": 0.415,
+      "fields": {
+        "full_name": {
+          "score": 0.36,
+          "source_count": 1,
+          "has_conflict": false
+        },
+        "emails": {
+          "score": 0.48,
+          "source_count": 1,
+          "has_conflict": false
+        },
+        "phones": {
+          "score": 0.48,
+          "source_count": 1,
+          "has_conflict": false
+        },
+        "location": {
+          "score": 0.36,
+          "source_count": 1,
+          "has_conflict": false
+        },
+        "skills": {
+          "score": 0.36,
+          "source_count": 1,
+          "has_conflict": false
+        },
+        "education": {
+          "score": 0.36,
+          "source_count": 1,
+          "has_conflict": false
+        },
+        "links": {
+          "score": 0.48,
+          "source_count": 1,
+          "has_conflict": false
+        }
+      }
+    }
+  },
+  {
+    "full_name": "Alice Chen",
+    "email": "alice.chen@example.com",
+    "phone": "+14155550101",
+    "location": {
+      "city": "San Francisco",
+      "region": "CA",
+      "country": "US"
+    },
+    "headline": "Senior Software Engineer",
+    "skills": [
+      "Python",
+      "Django",
+      "React",
+      "PostgreSQL",
+      "AWS",
+      "Docker",
+      "Kubernetes",
+      "System Design",
+      "Microservices",
+      "Linux",
+      "Jenkins",
+      "Redis",
+      "TypeScript",
+      "JavaScript",
+      "Kafka",
+      "Git",
+      "CI/CD"
+    ],
+    "experience_years": 8.0,
+    "education": [
+      {
+        "institution": "Stanford University",
+        "degree": "M.S. Computer Science",
+        "field": null,
+        "end_year": null
+      },
+      {
+        "institution": "UC Berkeley",
+        "degree": "B.S. Computer Science",
+        "field": null,
+        "end_year": null
+      }
+    ],
+    "links": {
+      "linkedin": "https://linkedin.com/in/alicechen",
+      "github": "https://github.com/alicechen",
+      "portfolio": null,
+      "other": []
+    },
+    "experience": [
+      {
+        "company": "Acme Corp",
+        "title": "Senior Software Engineer",
+        "start": null,
+        "end": null,
+        "summary": null
+      }
+    ],
+    "_confidence": {
+      "overall": 0.946,
+      "fields": {
+        "full_name": {
+          "score": 1.0,
+          "source_count": 4,
+          "has_conflict": false
+        },
+        "emails": {
+          "score": 1.0,
+          "source_count": 4,
+          "has_conflict": true
+        },
+        "phones": {
+          "score": 1.0,
+          "source_count": 4,
+          "has_conflict": true
+        },
+        "headline": {
+          "score": 0.85,
+          "source_count": 3,
+          "has_conflict": true
+        },
+        "location": {
+          "score": 0.85,
+          "source_count": 3,
+          "has_conflict": true
+        },
+        "skills": {
+          "score": 1.0,
+          "source_count": 4,
+          "has_conflict": true
+        },
+        "years_experience": {
+          "score": 1.0,
+          "source_count": 3,
+          "has_conflict": false
+        },
+        "education": {
+          "score": 0.8,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "experience": {
+          "score": 0.85,
+          "source_count": 3,
+          "has_conflict": true
+        },
+        "links": {
+          "score": 0.85,
+          "source_count": 3,
+          "has_conflict": true
+        }
+      }
+    }
+  },
+  {
+    "full_name": "Bob Martinez",
+    "email": "bob.martinez@example.com",
+    "phone": "+12125550199",
+    "location": {
+      "city": "New York",
+      "region": "NY",
+      "country": "US"
+    },
+    "headline": "Data Scientist",
+    "skills": [
+      "Python",
+      "Machine Learning",
+      "TensorFlow",
+      "PyTorch",
+      "SQL",
+      "Pandas",
+      "NumPy",
+      "NLP",
+      "Deep Learning"
+    ],
+    "experience_years": 5.0,
+    "education": [
+      {
+        "institution": "Columbia University",
+        "degree": "Ph.D. Statistics",
+        "field": null,
+        "end_year": null
+      }
+    ],
+    "links": {
+      "linkedin": "https://linkedin.com/in/bobmartinez",
+      "github": null,
+      "portfolio": null,
+      "other": []
+    },
+    "experience": [
+      {
+        "company": "DataFlow Inc",
+        "title": "Data Scientist",
+        "start": null,
+        "end": null,
+        "summary": null
+      }
+    ],
+    "_confidence": {
+      "overall": 0.865,
+      "fields": {
+        "full_name": {
+          "score": 1.0,
+          "source_count": 3,
+          "has_conflict": false
+        },
+        "emails": {
+          "score": 0.9,
+          "source_count": 3,
+          "has_conflict": true
+        },
+        "phones": {
+          "score": 0.8,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "headline": {
+          "score": 0.85,
+          "source_count": 3,
+          "has_conflict": true
+        },
+        "location": {
+          "score": 0.75,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "skills": {
+          "score": 0.9,
+          "source_count": 3,
+          "has_conflict": true
+        },
+        "years_experience": {
+          "score": 0.75,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "education": {
+          "score": 0.85,
+          "source_count": 1,
+          "has_conflict": false
+        },
+        "experience": {
+          "score": 0.85,
+          "source_count": 3,
+          "has_conflict": true
+        },
+        "links": {
+          "score": 0.8,
+          "source_count": 1,
+          "has_conflict": false
+        }
+      }
+    }
+  },
+  {
+    "full_name": "Charlie Kim",
+    "email": "charlie.kim@example.com",
+    "phone": "+442079460958",
+    "location": {
+      "city": "London",
+      "region": null,
+      "country": "GB"
+    },
+    "headline": "Full Stack Developer",
+    "skills": [
+      "JavaScript",
+      "TypeScript",
+      "Node.js",
+      "React",
+      "Vue.js",
+      "MongoDB",
+      "GraphQL"
+    ],
+    "experience_years": 3.0,
+    "education": [
+      {
+        "institution": "Imperial College London",
+        "degree": "B.Sc. Computer Science",
+        "field": null,
+        "end_year": null
+      }
+    ],
+    "links": {
+      "linkedin": "https://linkedin.com/in/charliekim",
+      "github": "https://github.com/charliekim",
+      "portfolio": null,
+      "other": []
+    },
+    "experience": [
+      {
+        "company": "TechStart Ltd",
+        "title": "Full Stack Developer",
+        "start": null,
+        "end": null,
+        "summary": null
+      }
+    ],
+    "_confidence": {
+      "overall": 0.837,
+      "fields": {
+        "full_name": {
+          "score": 0.9,
+          "source_count": 2,
+          "has_conflict": false
+        },
+        "emails": {
+          "score": 0.8,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "phones": {
+          "score": 0.95,
+          "source_count": 2,
+          "has_conflict": false
+        },
+        "headline": {
+          "score": 0.75,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "location": {
+          "score": 0.75,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "skills": {
+          "score": 0.8,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "years_experience": {
+          "score": 0.9,
+          "source_count": 2,
+          "has_conflict": false
+        },
+        "education": {
+          "score": 0.85,
+          "source_count": 1,
+          "has_conflict": false
+        },
+        "experience": {
+          "score": 0.75,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "links": {
+          "score": 0.95,
+          "source_count": 2,
+          "has_conflict": false
+        }
+      }
+    }
+  },
+  {
+    "full_name": "Eva Rodriguez",
+    "email": "eva.rod@example.com",
+    "phone": "+16505550142",
+    "location": {
+      "city": "San Jose",
+      "region": "CA",
+      "country": "US"
+    },
+    "headline": "DevOps Engineer",
+    "skills": [
+      "Kubernetes",
+      "Docker",
+      "Terraform",
+      "AWS",
+      "CI/CD",
+      "Linux",
+      "Jenkins"
+    ],
+    "experience_years": 6.0,
+    "education": [
+      {
+        "institution": "UC Berkeley",
+        "degree": "B.S. Computer Engineering",
+        "field": null,
+        "end_year": null
+      }
+    ],
+    "links": {
+      "linkedin": null,
+      "github": "https://github.com/evarodriguez",
+      "portfolio": null,
+      "other": []
+    },
+    "experience": [
+      {
+        "company": "CloudNine Systems",
+        "title": "DevOps Engineer",
+        "start": null,
+        "end": null,
+        "summary": null
+      }
+    ],
+    "_confidence": {
+      "overall": 0.827,
+      "fields": {
+        "full_name": {
+          "score": 0.9,
+          "source_count": 2,
+          "has_conflict": false
+        },
+        "emails": {
+          "score": 0.8,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "phones": {
+          "score": 0.8,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "headline": {
+          "score": 0.75,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "location": {
+          "score": 0.75,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "skills": {
+          "score": 0.8,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "years_experience": {
+          "score": 0.9,
+          "source_count": 2,
+          "has_conflict": false
+        },
+        "education": {
+          "score": 0.85,
+          "source_count": 1,
+          "has_conflict": false
+        },
+        "experience": {
+          "score": 0.9,
+          "source_count": 2,
+          "has_conflict": false
+        },
+        "links": {
+          "score": 0.9,
+          "source_count": 2,
+          "has_conflict": false
+        }
+      }
+    }
+  },
+  {
+    "full_name": "Diana Patel",
+    "email": "diana.patel@example.com",
+    "phone": null,
+    "location": {
+      "city": "Bangalore",
+      "region": "India",
+      "country": "IN"
+    },
+    "headline": "Product Manager",
+    "skills": [
+      "Agile",
+      "Scrum",
+      "SQL",
+      "Figma",
+      "R",
+      "Elasticsearch"
+    ],
+    "experience_years": 10.0,
+    "education": [
+      {
+        "institution": "IIM Bangalore",
+        "degree": "MBA",
+        "field": null,
+        "end_year": null
+      },
+      {
+        "institution": "IIT Delhi",
+        "degree": "B.Tech Computer Science",
+        "field": null,
+        "end_year": null
+      }
+    ],
+    "links": {
+      "linkedin": "https://linkedin.com/in/dianapatel",
+      "github": null,
+      "portfolio": null,
+      "other": []
+    },
+    "experience": [
+      {
+        "company": "GlobalSoft",
+        "title": "Product Manager",
+        "start": null,
+        "end": null,
+        "summary": null
+      }
+    ],
+    "_confidence": {
+      "overall": 0.796,
+      "fields": {
+        "full_name": {
+          "score": 0.9,
+          "source_count": 2,
+          "has_conflict": false
+        },
+        "emails": {
+          "score": 0.75,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "headline": {
+          "score": 0.75,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "location": {
+          "score": 0.75,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "skills": {
+          "score": 0.75,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "years_experience": {
+          "score": 0.9,
+          "source_count": 2,
+          "has_conflict": false
+        },
+        "education": {
+          "score": 0.85,
+          "source_count": 1,
+          "has_conflict": false
+        },
+        "experience": {
+          "score": 0.75,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "links": {
+          "score": 0.75,
+          "source_count": 2,
+          "has_conflict": true
+        }
+      }
+    }
+  },
+  {
+    "full_name": "Frank Wilson",
+    "email": "frank.w@example.com",
+    "phone": null,
+    "location": {
+      "city": "Austin",
+      "region": "TX",
+      "country": "US"
+    },
+    "headline": "Junior Developer",
+    "skills": [
+      "Java",
+      "Spring",
+      "MySQL",
+      "Git"
+    ],
+    "experience_years": 1.0,
+    "education": null,
+    "links": null,
+    "experience": [
+      {
+        "company": "Acme Corp",
+        "title": "Junior Developer",
+        "start": null,
+        "end": null,
+        "summary": null
+      }
+    ],
+    "_confidence": {
+      "overall": 0.823,
+      "fields": {
+        "full_name": {
+          "score": 0.9,
+          "source_count": 2,
+          "has_conflict": false
+        },
+        "emails": {
+          "score": 0.75,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "headline": {
+          "score": 0.9,
+          "source_count": 2,
+          "has_conflict": false
+        },
+        "location": {
+          "score": 0.75,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "skills": {
+          "score": 0.75,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "years_experience": {
+          "score": 0.9,
+          "source_count": 2,
+          "has_conflict": false
+        },
+        "experience": {
+          "score": 0.9,
+          "source_count": 2,
+          "has_conflict": false
+        }
+      }
+    }
+  }
+]

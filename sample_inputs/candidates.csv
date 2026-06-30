@@ -1,0 +1,8 @@
+name,email,phone,current_company,title,location,country,skills,years_of_experience,linkedin_url,github_url
+Alice Chen,alice.chen@example.com,+1-415-555-0101,Acme Corp,Senior Software Engineer,"San Francisco, CA",US,"Python;Django;React;PostgreSQL;AWS",8,https://linkedin.com/in/alicechen,https://github.com/alicechen
+Bob Martinez,bob.martinez@example.com,(212) 555-0199,DataFlow Inc,Data Scientist,"New York, NY",USA,"Python;Machine Learning;TensorFlow;SQL;Pandas",5,https://linkedin.com/in/bobmartinez,
+Charlie Kim,charlie.kim@example.com,+44 20 7946 0958,TechStart Ltd,Full Stack Developer,"London",UK,"JavaScript;TypeScript;Node.js;React;MongoDB",3,,https://github.com/charliekim
+Diana Patel,diana.patel@example.com,,GlobalSoft,Product Manager,"Bangalore, India",India,"Agile;Scrum;SQL;Figma;JIRA",10,https://linkedin.com/in/dianapatel,
+,,,,,,,,,,
+Eva Rodriguez,eva.rod@example.com,+1 650-555-0142,CloudNine Systems,DevOps Engineer,"San Jose, CA",US,"Kubernetes;Docker;Terraform;AWS;CI/CD;Linux",6,,https://github.com/evarodriguez
+Frank Wilson,frank.w@example.com,555-0188,Acme Corp,Junior Developer,"Austin, TX",US,"Java;Spring;MySQL",1,,

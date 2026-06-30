@@ -1,0 +1,2347 @@
+[
+  {
+    "candidate_id": "71b24d99-e7b7-4410-8f05-4f3da17ef311",
+    "full_name": "Ankan Basu",
+    "primary_email": "ankanbasu10@gmail.com",
+    "phone": "+916296441903",
+    "headline": null,
+    "location": {
+      "city": "West Bengal",
+      "region": "Kolkata 721401",
+      "country": null
+    },
+    "links": {
+      "linkedin": "https://linkedin.com/in/ankanbasu10",
+      "github": "https://github.com/ankan123basu/",
+      "portfolio": null,
+      "other": []
+    },
+    "skills": [
+      {
+        "name": "HTML",
+        "confidence": 0.65,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "React",
+        "confidence": 0.65,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Data Structures",
+        "confidence": 0.65,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Jenkins",
+        "confidence": 0.65,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "DevOps",
+        "confidence": 0.65,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "PostgreSQL",
+        "confidence": 0.65,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Java",
+        "confidence": 0.65,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "CSS",
+        "confidence": 0.65,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "MongoDB",
+        "confidence": 0.65,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Linux",
+        "confidence": 0.65,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "REST",
+        "confidence": 0.65,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "JavaScript",
+        "confidence": 0.65,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Docker",
+        "confidence": 0.65,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "MySQL",
+        "confidence": 0.65,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Git",
+        "confidence": 0.65,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "PHP",
+        "confidence": 0.65,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Express",
+        "confidence": 0.65,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Node.js",
+        "confidence": 0.5,
+        "sources": []
+      },
+      {
+        "name": "Spring",
+        "confidence": 0.65,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Python",
+        "confidence": 0.65,
+        "sources": [
+          "resume"
+        ]
+      }
+    ],
+    "years_experience": null,
+    "education": [
+      {
+        "institution": "Lovely Professional University 2023 – Present",
+        "degree": null,
+        "field": null,
+        "end_year": null
+      },
+      {
+        "institution": "Punjab",
+        "degree": "Bachelor of Technology - Computer Science and Engineering — CGPA: 9.04 Phagwara",
+        "field": null,
+        "end_year": null
+      },
+      {
+        "institution": "Contai Public School 2021 - 2022",
+        "degree": null,
+        "field": null,
+        "end_year": null
+      },
+      {
+        "institution": "Intermediate (class 12)",
+        "degree": "ISC",
+        "field": null,
+        "end_year": null
+      },
+      {
+        "institution": "West Bengal",
+        "degree": "Percentage: 97% Contai",
+        "field": null,
+        "end_year": null
+      }
+    ],
+    "experience": null,
+    "_confidence": {
+      "overall": 0.415,
+      "fields": {
+        "full_name": {
+          "score": 0.36,
+          "source_count": 1,
+          "has_conflict": false
+        },
+        "emails": {
+          "score": 0.48,
+          "source_count": 1,
+          "has_conflict": false
+        },
+        "phones": {
+          "score": 0.48,
+          "source_count": 1,
+          "has_conflict": false
+        },
+        "location": {
+          "score": 0.36,
+          "source_count": 1,
+          "has_conflict": false
+        },
+        "skills": {
+          "score": 0.36,
+          "source_count": 1,
+          "has_conflict": false
+        },
+        "education": {
+          "score": 0.36,
+          "source_count": 1,
+          "has_conflict": false
+        },
+        "links": {
+          "score": 0.48,
+          "source_count": 1,
+          "has_conflict": false
+        }
+      }
+    },
+    "_provenance": [
+      {
+        "field": "full_name",
+        "source": "resume",
+        "method": "heuristic",
+        "raw_value": "Ankan Basu"
+      },
+      {
+        "field": "emails",
+        "source": "resume",
+        "method": "regex",
+        "raw_value": "ankanbasu10@gmail.com"
+      },
+      {
+        "field": "phones",
+        "source": "resume",
+        "method": "regex",
+        "raw_value": "+91 6296441903"
+      },
+      {
+        "field": "location",
+        "source": "resume",
+        "method": "heuristic",
+        "raw_value": "West Bengal, Kolkata 721401"
+      },
+      {
+        "field": "links",
+        "source": "resume",
+        "method": "regex",
+        "raw_value": "https://linkedin.com/in/ankanbasu10"
+      },
+      {
+        "field": "links",
+        "source": "resume",
+        "method": "regex",
+        "raw_value": "https://github.com/ankan123basu/"
+      },
+      {
+        "field": "skills",
+        "source": "resume",
+        "method": "heuristic",
+        "raw_value": [
+          "Html",
+          "React",
+          "Data Structures",
+          "Jenkins",
+          "Devops",
+          "Postgresql",
+          "Java",
+          "CSS",
+          "Mongodb",
+          "Linux",
+          "Rest",
+          "Javascript",
+          "Docker",
+          "Mysql",
+          "GIT",
+          "PHP",
+          "Express",
+          "Nodejs",
+          "Spring",
+          "Python"
+        ]
+      },
+      {
+        "field": "education",
+        "source": "resume",
+        "method": "heuristic",
+        "raw_value": "Lovely Professional University 2023 – Present; Bachelor of Technology - Computer Science and Engineering — CGPA: 9.04 Phagwara, Punjab; Contai Public School 2021 - 2022; ISC, Intermediate (class 12); Percentage: 97% Contai, West Bengal"
+      },
+      {
+        "field": "certifications",
+        "source": "resume",
+        "method": "heuristic",
+        "raw_value": [
+          "Spring 7 & Spring Boot 4 for Beginners May’ 2026",
+          "Udemy — Certificate",
+          "MongoDB Skillathon Industry certification Jul’ 2025",
+          "MongoDB — Certificate",
+          "Privacy and Security in Online Social Media Apr’ 2025"
+        ]
+      }
+    ]
+  },
+  {
+    "candidate_id": "e2ad8df5-de65-408e-8d7f-03054c222e83",
+    "full_name": "Alice Chen",
+    "primary_email": "alice.chen@example.com",
+    "phone": "+14155550101",
+    "headline": "Senior Software Engineer",
+    "location": {
+      "city": "San Francisco",
+      "region": "CA",
+      "country": "US"
+    },
+    "links": {
+      "linkedin": "https://linkedin.com/in/alicechen",
+      "github": "https://github.com/alicechen",
+      "portfolio": null,
+      "other": []
+    },
+    "skills": [
+      {
+        "name": "Python",
+        "confidence": 1.0,
+        "sources": [
+          "ats_json",
+          "csv",
+          "notes",
+          "resume"
+        ]
+      },
+      {
+        "name": "Django",
+        "confidence": 0.95,
+        "sources": [
+          "ats_json",
+          "csv",
+          "resume"
+        ]
+      },
+      {
+        "name": "React",
+        "confidence": 0.95,
+        "sources": [
+          "ats_json",
+          "csv",
+          "resume"
+        ]
+      },
+      {
+        "name": "PostgreSQL",
+        "confidence": 0.95,
+        "sources": [
+          "ats_json",
+          "csv",
+          "resume"
+        ]
+      },
+      {
+        "name": "AWS",
+        "confidence": 1.0,
+        "sources": [
+          "ats_json",
+          "csv",
+          "notes",
+          "resume"
+        ]
+      },
+      {
+        "name": "Docker",
+        "confidence": 0.8,
+        "sources": [
+          "ats_json",
+          "resume"
+        ]
+      },
+      {
+        "name": "Kubernetes",
+        "confidence": 0.8,
+        "sources": [
+          "ats_json",
+          "resume"
+        ]
+      },
+      {
+        "name": "System Design",
+        "confidence": 0.95,
+        "sources": [
+          "ats_json",
+          "notes",
+          "resume"
+        ]
+      },
+      {
+        "name": "Microservices",
+        "confidence": 0.8,
+        "sources": [
+          "notes",
+          "resume"
+        ]
+      },
+      {
+        "name": "Jenkins",
+        "confidence": 0.65,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Linux",
+        "confidence": 0.65,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "JavaScript",
+        "confidence": 0.65,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Git",
+        "confidence": 0.65,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "TypeScript",
+        "confidence": 0.65,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "CI/CD",
+        "confidence": 0.65,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Redis",
+        "confidence": 0.65,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Kafka",
+        "confidence": 0.65,
+        "sources": [
+          "resume"
+        ]
+      }
+    ],
+    "years_experience": 8.0,
+    "education": [
+      {
+        "institution": "Stanford University",
+        "degree": "M.S. Computer Science",
+        "field": null,
+        "end_year": null
+      },
+      {
+        "institution": "UC Berkeley",
+        "degree": "B.S. Computer Science",
+        "field": null,
+        "end_year": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "Acme Corp",
+        "title": "Senior Software Engineer",
+        "start": null,
+        "end": null,
+        "summary": null
+      }
+    ],
+    "_confidence": {
+      "overall": 0.946,
+      "fields": {
+        "full_name": {
+          "score": 1.0,
+          "source_count": 4,
+          "has_conflict": false
+        },
+        "emails": {
+          "score": 1.0,
+          "source_count": 4,
+          "has_conflict": true
+        },
+        "phones": {
+          "score": 1.0,
+          "source_count": 4,
+          "has_conflict": true
+        },
+        "headline": {
+          "score": 0.85,
+          "source_count": 3,
+          "has_conflict": true
+        },
+        "location": {
+          "score": 0.85,
+          "source_count": 3,
+          "has_conflict": true
+        },
+        "skills": {
+          "score": 1.0,
+          "source_count": 4,
+          "has_conflict": true
+        },
+        "years_experience": {
+          "score": 1.0,
+          "source_count": 3,
+          "has_conflict": false
+        },
+        "education": {
+          "score": 0.8,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "experience": {
+          "score": 0.85,
+          "source_count": 3,
+          "has_conflict": true
+        },
+        "links": {
+          "score": 0.85,
+          "source_count": 3,
+          "has_conflict": true
+        }
+      }
+    },
+    "_provenance": [
+      {
+        "field": "full_name",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "Alice Chen"
+      },
+      {
+        "field": "full_name",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "Alice Chen"
+      },
+      {
+        "field": "full_name",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "Alice Chen"
+      },
+      {
+        "field": "full_name",
+        "source": "resume",
+        "method": "heuristic",
+        "raw_value": "Alice Chen"
+      },
+      {
+        "field": "full_name",
+        "source": "notes",
+        "method": "regex",
+        "raw_value": "Alice Chen"
+      },
+      {
+        "field": "emails",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "alice.chen@example.com"
+      },
+      {
+        "field": "emails",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "alice.chen@example.com"
+      },
+      {
+        "field": "emails",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "alice.chen@example.com"
+      },
+      {
+        "field": "emails",
+        "source": "notes",
+        "method": "regex",
+        "raw_value": "alice.chen@example.com"
+      },
+      {
+        "field": "emails",
+        "source": "resume",
+        "method": "regex",
+        "raw_value": "alice.chen@example.com"
+      },
+      {
+        "field": "phones",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "4155550101"
+      },
+      {
+        "field": "phones",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "+1-415-555-0101"
+      },
+      {
+        "field": "phones",
+        "source": "notes",
+        "method": "regex",
+        "raw_value": "415-555-0101"
+      },
+      {
+        "field": "phones",
+        "source": "resume",
+        "method": "regex",
+        "raw_value": "(415) 555-0101"
+      },
+      {
+        "field": "location",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "San Francisco, CA"
+      },
+      {
+        "field": "location",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "San Francisco Bay Area"
+      },
+      {
+        "field": "location",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "San Francisco, California"
+      },
+      {
+        "field": "location",
+        "source": "notes",
+        "method": "regex",
+        "raw_value": "San Francisco"
+      },
+      {
+        "field": "country",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "US"
+      },
+      {
+        "field": "country",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "United States"
+      },
+      {
+        "field": "country",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "United States"
+      },
+      {
+        "field": "links",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "https://linkedin.com/in/alicechen"
+      },
+      {
+        "field": "links",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "https://www.linkedin.com/in/alicechen"
+      },
+      {
+        "field": "links",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "https://www.linkedin.com/in/alicechen"
+      },
+      {
+        "field": "links",
+        "source": "resume",
+        "method": "regex",
+        "raw_value": "https://www.linkedin.com/in/alicechen"
+      },
+      {
+        "field": "links",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "https://github.com/alicechen"
+      },
+      {
+        "field": "links",
+        "source": "resume",
+        "method": "regex",
+        "raw_value": "https://github.com/alicechen"
+      },
+      {
+        "field": "headline",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "Senior Software Engineer"
+      },
+      {
+        "field": "headline",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "Senior Software Engineer"
+      },
+      {
+        "field": "headline",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "Sr. Software Engineer"
+      },
+      {
+        "field": "headline",
+        "source": "notes",
+        "method": "regex",
+        "raw_value": "Senior Software Engineer"
+      },
+      {
+        "field": "years_experience",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": 8.0
+      },
+      {
+        "field": "years_experience",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": 8.0
+      },
+      {
+        "field": "years_experience",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": 8.0
+      },
+      {
+        "field": "years_experience",
+        "source": "resume",
+        "method": "regex",
+        "raw_value": 8.0
+      },
+      {
+        "field": "skills",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": [
+          "Python",
+          "Django",
+          "React",
+          "PostgreSQL",
+          "AWS",
+          "Docker"
+        ]
+      },
+      {
+        "field": "skills",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": [
+          "Python",
+          "Django",
+          "React",
+          "PostgreSQL",
+          "AWS"
+        ]
+      },
+      {
+        "field": "skills",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": [
+          "Python",
+          "Django",
+          "React",
+          "AWS",
+          "Docker",
+          "Kubernetes",
+          "System Design"
+        ]
+      },
+      {
+        "field": "skills",
+        "source": "notes",
+        "method": "regex",
+        "raw_value": [
+          "Python",
+          "System Design",
+          "Microservices",
+          "AWS",
+          "Leadership"
+        ]
+      },
+      {
+        "field": "skills",
+        "source": "resume",
+        "method": "heuristic",
+        "raw_value": [
+          "React",
+          "Jenkins",
+          "Postgresql",
+          "Microservices",
+          "Linux",
+          "Django",
+          "AWS",
+          "Javascript",
+          "Docker",
+          "System Design",
+          "GIT",
+          "Typescript",
+          "Kubernetes",
+          "Ci/Cd",
+          "Redis",
+          "Python",
+          "Kafka"
+        ]
+      },
+      {
+        "field": "experience",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "Acme Corp"
+      },
+      {
+        "field": "experience",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "Acme Corp"
+      },
+      {
+        "field": "experience",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "Acme Corporation"
+      },
+      {
+        "field": "experience",
+        "source": "notes",
+        "method": "regex",
+        "raw_value": "Acme Corp"
+      },
+      {
+        "field": "education",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "M.S. Computer Science, Stanford University; B.S. Computer Science, UC Berkeley"
+      },
+      {
+        "field": "education",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "M.S. Computer Science, Stanford University"
+      },
+      {
+        "field": "education",
+        "source": "resume",
+        "method": "heuristic",
+        "raw_value": "M.S. Computer Science — Stanford University (2016); B.S. Computer Science — UC Berkeley (2014)"
+      },
+      {
+        "field": "summary",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "Passionate software engineer with 8 years of experience building scalable web applications and cloud infrastructure. Led migration of monolithic architecture to microservices at Acme Corp, reducing deployment time by 70%."
+      },
+      {
+        "field": "summary",
+        "source": "notes",
+        "method": "heuristic",
+        "raw_value": "Spoke with Alice on Jan 10. Very strong Python background. Led the migration from monolith to microservices at Acme. Impressive system design skills. She mentioned being interested in tech lead roles. Currently earning around $180k. Open to remote positions. Has AWS certifications."
+      },
+      {
+        "field": "certifications",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": [
+          "AWS Solutions Architect"
+        ]
+      },
+      {
+        "field": "certifications",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": [
+          "AWS Solutions Architect Associate",
+          "AWS Developer Associate"
+        ]
+      },
+      {
+        "field": "certifications",
+        "source": "resume",
+        "method": "heuristic",
+        "raw_value": [
+          "AWS Solutions Architect Associate",
+          "AWS Developer Associate",
+          "Certified Kubernetes Administrator (CKA)"
+        ]
+      }
+    ]
+  },
+  {
+    "candidate_id": "bb24d8e1-05db-4eed-b14d-e43a9efc19ca",
+    "full_name": "Bob Martinez",
+    "primary_email": "bob.martinez@example.com",
+    "phone": "+12125550199",
+    "headline": "Data Scientist",
+    "location": {
+      "city": "New York",
+      "region": "NY",
+      "country": "US"
+    },
+    "links": {
+      "linkedin": "https://linkedin.com/in/bobmartinez",
+      "github": null,
+      "portfolio": null,
+      "other": []
+    },
+    "skills": [
+      {
+        "name": "Python",
+        "confidence": 0.95,
+        "sources": [
+          "ats_json",
+          "csv",
+          "notes"
+        ]
+      },
+      {
+        "name": "Machine Learning",
+        "confidence": 0.95,
+        "sources": [
+          "ats_json",
+          "csv",
+          "notes"
+        ]
+      },
+      {
+        "name": "TensorFlow",
+        "confidence": 0.8,
+        "sources": [
+          "ats_json",
+          "csv"
+        ]
+      },
+      {
+        "name": "PyTorch",
+        "confidence": 0.65,
+        "sources": [
+          "ats_json"
+        ]
+      },
+      {
+        "name": "SQL",
+        "confidence": 0.8,
+        "sources": [
+          "ats_json",
+          "csv"
+        ]
+      },
+      {
+        "name": "Pandas",
+        "confidence": 0.8,
+        "sources": [
+          "ats_json",
+          "csv"
+        ]
+      },
+      {
+        "name": "NumPy",
+        "confidence": 0.65,
+        "sources": [
+          "ats_json"
+        ]
+      },
+      {
+        "name": "NLP",
+        "confidence": 0.65,
+        "sources": [
+          "notes"
+        ]
+      },
+      {
+        "name": "Deep Learning",
+        "confidence": 0.65,
+        "sources": [
+          "notes"
+        ]
+      }
+    ],
+    "years_experience": 5.0,
+    "education": [
+      {
+        "institution": "Columbia University",
+        "degree": "Ph.D. Statistics",
+        "field": null,
+        "end_year": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "DataFlow Inc",
+        "title": "Data Scientist",
+        "start": null,
+        "end": null,
+        "summary": null
+      }
+    ],
+    "_confidence": {
+      "overall": 0.865,
+      "fields": {
+        "full_name": {
+          "score": 1.0,
+          "source_count": 3,
+          "has_conflict": false
+        },
+        "emails": {
+          "score": 0.9,
+          "source_count": 3,
+          "has_conflict": true
+        },
+        "phones": {
+          "score": 0.8,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "headline": {
+          "score": 0.85,
+          "source_count": 3,
+          "has_conflict": true
+        },
+        "location": {
+          "score": 0.75,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "skills": {
+          "score": 0.9,
+          "source_count": 3,
+          "has_conflict": true
+        },
+        "years_experience": {
+          "score": 0.75,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "education": {
+          "score": 0.85,
+          "source_count": 1,
+          "has_conflict": false
+        },
+        "experience": {
+          "score": 0.85,
+          "source_count": 3,
+          "has_conflict": true
+        },
+        "links": {
+          "score": 0.8,
+          "source_count": 1,
+          "has_conflict": false
+        }
+      }
+    },
+    "_provenance": [
+      {
+        "field": "full_name",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "Bob Martinez"
+      },
+      {
+        "field": "full_name",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "Bob Martinez"
+      },
+      {
+        "field": "full_name",
+        "source": "notes",
+        "method": "regex",
+        "raw_value": "Bob Martinez"
+      },
+      {
+        "field": "emails",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "bob.martinez@example.com"
+      },
+      {
+        "field": "emails",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "bob.martinez@example.com"
+      },
+      {
+        "field": "emails",
+        "source": "notes",
+        "method": "regex",
+        "raw_value": "bob.martinez@example.com"
+      },
+      {
+        "field": "phones",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "+1-212-555-0199"
+      },
+      {
+        "field": "phones",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "(212) 555-0199"
+      },
+      {
+        "field": "location",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "New York, NY"
+      },
+      {
+        "field": "location",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "New York City"
+      },
+      {
+        "field": "country",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "USA"
+      },
+      {
+        "field": "country",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "US"
+      },
+      {
+        "field": "links",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "https://linkedin.com/in/bobmartinez"
+      },
+      {
+        "field": "headline",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "Data Scientist"
+      },
+      {
+        "field": "headline",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "Senior Data Scientist"
+      },
+      {
+        "field": "headline",
+        "source": "notes",
+        "method": "regex",
+        "raw_value": "Data Scientist"
+      },
+      {
+        "field": "years_experience",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": 5.0
+      },
+      {
+        "field": "years_experience",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": 5.5
+      },
+      {
+        "field": "skills",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": [
+          "Python",
+          "Machine Learning",
+          "TensorFlow",
+          "PyTorch",
+          "SQL",
+          "Pandas",
+          "NumPy"
+        ]
+      },
+      {
+        "field": "skills",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": [
+          "Python",
+          "Machine Learning",
+          "TensorFlow",
+          "SQL",
+          "Pandas"
+        ]
+      },
+      {
+        "field": "skills",
+        "source": "notes",
+        "method": "regex",
+        "raw_value": [
+          "Machine Learning",
+          "NLP",
+          "Deep Learning",
+          "Python",
+          "Statistics"
+        ]
+      },
+      {
+        "field": "experience",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "DataFlow Inc"
+      },
+      {
+        "field": "experience",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "DataFlow Inc."
+      },
+      {
+        "field": "experience",
+        "source": "notes",
+        "method": "regex",
+        "raw_value": "DataFlow"
+      },
+      {
+        "field": "education",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "Ph.D. Statistics, Columbia University"
+      },
+      {
+        "field": "summary",
+        "source": "notes",
+        "method": "heuristic",
+        "raw_value": "Interviewed Bob on Feb 5. PhD from Columbia in Statistics. Very strong in ML/AI space. Published 3 papers on NLP. Currently at DataFlow working on recommendation systems. Interested in moving to a larger company for more impact. Salary expectation: $200k+."
+      },
+      {
+        "field": "certifications",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": [
+          "Google Cloud Professional ML Engineer"
+        ]
+      }
+    ]
+  },
+  {
+    "candidate_id": "e60e9b52-d2b5-4b03-8d7c-5d1ea0376b18",
+    "full_name": "Charlie Kim",
+    "primary_email": "charlie.kim@example.com",
+    "phone": "+442079460958",
+    "headline": "Full Stack Developer",
+    "location": {
+      "city": "London",
+      "region": null,
+      "country": "GB"
+    },
+    "links": {
+      "linkedin": "https://linkedin.com/in/charliekim",
+      "github": "https://github.com/charliekim",
+      "portfolio": null,
+      "other": []
+    },
+    "skills": [
+      {
+        "name": "JavaScript",
+        "confidence": 0.8,
+        "sources": [
+          "ats_json",
+          "csv"
+        ]
+      },
+      {
+        "name": "TypeScript",
+        "confidence": 0.8,
+        "sources": [
+          "ats_json",
+          "csv"
+        ]
+      },
+      {
+        "name": "Node.js",
+        "confidence": 0.8,
+        "sources": [
+          "ats_json",
+          "csv"
+        ]
+      },
+      {
+        "name": "React",
+        "confidence": 0.8,
+        "sources": [
+          "ats_json",
+          "csv"
+        ]
+      },
+      {
+        "name": "Vue.js",
+        "confidence": 0.65,
+        "sources": [
+          "ats_json"
+        ]
+      },
+      {
+        "name": "MongoDB",
+        "confidence": 0.8,
+        "sources": [
+          "ats_json",
+          "csv"
+        ]
+      },
+      {
+        "name": "GraphQL",
+        "confidence": 0.65,
+        "sources": [
+          "ats_json"
+        ]
+      }
+    ],
+    "years_experience": 3.0,
+    "education": [
+      {
+        "institution": "Imperial College London",
+        "degree": "B.Sc. Computer Science",
+        "field": null,
+        "end_year": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "TechStart Ltd",
+        "title": "Full Stack Developer",
+        "start": null,
+        "end": null,
+        "summary": null
+      }
+    ],
+    "_confidence": {
+      "overall": 0.837,
+      "fields": {
+        "full_name": {
+          "score": 0.9,
+          "source_count": 2,
+          "has_conflict": false
+        },
+        "emails": {
+          "score": 0.8,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "phones": {
+          "score": 0.95,
+          "source_count": 2,
+          "has_conflict": false
+        },
+        "headline": {
+          "score": 0.75,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "location": {
+          "score": 0.75,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "skills": {
+          "score": 0.8,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "years_experience": {
+          "score": 0.9,
+          "source_count": 2,
+          "has_conflict": false
+        },
+        "education": {
+          "score": 0.85,
+          "source_count": 1,
+          "has_conflict": false
+        },
+        "experience": {
+          "score": 0.75,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "links": {
+          "score": 0.95,
+          "source_count": 2,
+          "has_conflict": false
+        }
+      }
+    },
+    "_provenance": [
+      {
+        "field": "full_name",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "Charlie Kim"
+      },
+      {
+        "field": "full_name",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "Charlie Kim"
+      },
+      {
+        "field": "emails",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "charlie.kim@example.com"
+      },
+      {
+        "field": "emails",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "charlie.kim@example.com"
+      },
+      {
+        "field": "phones",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "+44 20 7946 0958"
+      },
+      {
+        "field": "phones",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "+44 20 7946 0958"
+      },
+      {
+        "field": "location",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "London"
+      },
+      {
+        "field": "location",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "London, UK"
+      },
+      {
+        "field": "country",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "UK"
+      },
+      {
+        "field": "country",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "GB"
+      },
+      {
+        "field": "links",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "https://linkedin.com/in/charliekim"
+      },
+      {
+        "field": "links",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "https://github.com/charliekim"
+      },
+      {
+        "field": "links",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "https://github.com/charliekim"
+      },
+      {
+        "field": "headline",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "Full Stack Developer"
+      },
+      {
+        "field": "headline",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "Full Stack Web Developer"
+      },
+      {
+        "field": "years_experience",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": 3.0
+      },
+      {
+        "field": "years_experience",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": 3.0
+      },
+      {
+        "field": "skills",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": [
+          "JavaScript",
+          "TypeScript",
+          "Node.js",
+          "React",
+          "Vue.js",
+          "MongoDB",
+          "GraphQL"
+        ]
+      },
+      {
+        "field": "skills",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": [
+          "JavaScript",
+          "TypeScript",
+          "Node.js",
+          "React",
+          "MongoDB"
+        ]
+      },
+      {
+        "field": "experience",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "TechStart Ltd"
+      },
+      {
+        "field": "experience",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "TechStart Limited"
+      },
+      {
+        "field": "education",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "B.Sc. Computer Science, Imperial College London"
+      }
+    ]
+  },
+  {
+    "candidate_id": "79077b82-b965-4969-93be-ed3aa8048f37",
+    "full_name": "Eva Rodriguez",
+    "primary_email": "eva.rod@example.com",
+    "phone": "+16505550142",
+    "headline": "DevOps Engineer",
+    "location": {
+      "city": "San Jose",
+      "region": "CA",
+      "country": "US"
+    },
+    "links": {
+      "linkedin": null,
+      "github": "https://github.com/evarodriguez",
+      "portfolio": null,
+      "other": []
+    },
+    "skills": [
+      {
+        "name": "Kubernetes",
+        "confidence": 0.8,
+        "sources": [
+          "ats_json",
+          "csv"
+        ]
+      },
+      {
+        "name": "Docker",
+        "confidence": 0.8,
+        "sources": [
+          "ats_json",
+          "csv"
+        ]
+      },
+      {
+        "name": "Terraform",
+        "confidence": 0.8,
+        "sources": [
+          "ats_json",
+          "csv"
+        ]
+      },
+      {
+        "name": "AWS",
+        "confidence": 0.8,
+        "sources": [
+          "ats_json",
+          "csv"
+        ]
+      },
+      {
+        "name": "CI/CD",
+        "confidence": 0.8,
+        "sources": [
+          "ats_json",
+          "csv"
+        ]
+      },
+      {
+        "name": "Linux",
+        "confidence": 0.8,
+        "sources": [
+          "ats_json",
+          "csv"
+        ]
+      },
+      {
+        "name": "Jenkins",
+        "confidence": 0.65,
+        "sources": [
+          "ats_json"
+        ]
+      }
+    ],
+    "years_experience": 6.0,
+    "education": [
+      {
+        "institution": "UC Berkeley",
+        "degree": "B.S. Computer Engineering",
+        "field": null,
+        "end_year": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "CloudNine Systems",
+        "title": "DevOps Engineer",
+        "start": null,
+        "end": null,
+        "summary": null
+      }
+    ],
+    "_confidence": {
+      "overall": 0.827,
+      "fields": {
+        "full_name": {
+          "score": 0.9,
+          "source_count": 2,
+          "has_conflict": false
+        },
+        "emails": {
+          "score": 0.8,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "phones": {
+          "score": 0.8,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "headline": {
+          "score": 0.75,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "location": {
+          "score": 0.75,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "skills": {
+          "score": 0.8,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "years_experience": {
+          "score": 0.9,
+          "source_count": 2,
+          "has_conflict": false
+        },
+        "education": {
+          "score": 0.85,
+          "source_count": 1,
+          "has_conflict": false
+        },
+        "experience": {
+          "score": 0.9,
+          "source_count": 2,
+          "has_conflict": false
+        },
+        "links": {
+          "score": 0.9,
+          "source_count": 2,
+          "has_conflict": false
+        }
+      }
+    },
+    "_provenance": [
+      {
+        "field": "full_name",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "Eva Rodriguez"
+      },
+      {
+        "field": "full_name",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "Eva Rodriguez"
+      },
+      {
+        "field": "emails",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "eva.rod@example.com"
+      },
+      {
+        "field": "emails",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "eva.rod@example.com"
+      },
+      {
+        "field": "phones",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "+16505550142"
+      },
+      {
+        "field": "phones",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "+1 650-555-0142"
+      },
+      {
+        "field": "location",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "San Jose, CA"
+      },
+      {
+        "field": "location",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "San Jose, California"
+      },
+      {
+        "field": "country",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "US"
+      },
+      {
+        "field": "country",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "US"
+      },
+      {
+        "field": "links",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "https://github.com/evarodriguez"
+      },
+      {
+        "field": "links",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "https://github.com/evarodriguez"
+      },
+      {
+        "field": "headline",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "DevOps Engineer"
+      },
+      {
+        "field": "headline",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "Senior DevOps Engineer"
+      },
+      {
+        "field": "years_experience",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": 6.0
+      },
+      {
+        "field": "years_experience",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": 6.0
+      },
+      {
+        "field": "skills",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": [
+          "Kubernetes",
+          "Docker",
+          "Terraform",
+          "AWS",
+          "CI/CD",
+          "Linux",
+          "Ansible",
+          "Jenkins"
+        ]
+      },
+      {
+        "field": "skills",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": [
+          "Kubernetes",
+          "Docker",
+          "Terraform",
+          "AWS",
+          "CI/CD",
+          "Linux"
+        ]
+      },
+      {
+        "field": "experience",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "CloudNine Systems"
+      },
+      {
+        "field": "experience",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "CloudNine Systems"
+      },
+      {
+        "field": "education",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "B.S. Computer Engineering, UC Berkeley"
+      },
+      {
+        "field": "certifications",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": [
+          "CKA - Certified Kubernetes Administrator",
+          "AWS DevOps Professional"
+        ]
+      }
+    ]
+  },
+  {
+    "candidate_id": "179c65a6-d636-4cb9-851a-5e12ff7752c7",
+    "full_name": "Diana Patel",
+    "primary_email": "diana.patel@example.com",
+    "phone": null,
+    "headline": "Product Manager",
+    "location": {
+      "city": "Bangalore",
+      "region": "India",
+      "country": "IN"
+    },
+    "links": {
+      "linkedin": "https://linkedin.com/in/dianapatel",
+      "github": null,
+      "portfolio": null,
+      "other": []
+    },
+    "skills": [
+      {
+        "name": "Agile",
+        "confidence": 0.8,
+        "sources": [
+          "ats_json",
+          "csv"
+        ]
+      },
+      {
+        "name": "Scrum",
+        "confidence": 0.8,
+        "sources": [
+          "ats_json",
+          "csv"
+        ]
+      },
+      {
+        "name": "SQL",
+        "confidence": 0.8,
+        "sources": [
+          "ats_json",
+          "csv"
+        ]
+      },
+      {
+        "name": "Figma",
+        "confidence": 0.8,
+        "sources": [
+          "ats_json",
+          "csv"
+        ]
+      },
+      {
+        "name": "R",
+        "confidence": 0.5,
+        "sources": []
+      },
+      {
+        "name": "Elasticsearch",
+        "confidence": 0.5,
+        "sources": []
+      }
+    ],
+    "years_experience": 10.0,
+    "education": [
+      {
+        "institution": "IIM Bangalore",
+        "degree": "MBA",
+        "field": null,
+        "end_year": null
+      },
+      {
+        "institution": "IIT Delhi",
+        "degree": "B.Tech Computer Science",
+        "field": null,
+        "end_year": null
+      }
+    ],
+    "experience": [
+      {
+        "company": "GlobalSoft",
+        "title": "Product Manager",
+        "start": null,
+        "end": null,
+        "summary": null
+      }
+    ],
+    "_confidence": {
+      "overall": 0.796,
+      "fields": {
+        "full_name": {
+          "score": 0.9,
+          "source_count": 2,
+          "has_conflict": false
+        },
+        "emails": {
+          "score": 0.75,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "headline": {
+          "score": 0.75,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "location": {
+          "score": 0.75,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "skills": {
+          "score": 0.75,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "years_experience": {
+          "score": 0.9,
+          "source_count": 2,
+          "has_conflict": false
+        },
+        "education": {
+          "score": 0.85,
+          "source_count": 1,
+          "has_conflict": false
+        },
+        "experience": {
+          "score": 0.75,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "links": {
+          "score": 0.75,
+          "source_count": 2,
+          "has_conflict": true
+        }
+      }
+    },
+    "_provenance": [
+      {
+        "field": "full_name",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "Diana Patel"
+      },
+      {
+        "field": "full_name",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "Diana Patel"
+      },
+      {
+        "field": "emails",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "diana.patel@example.com"
+      },
+      {
+        "field": "emails",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "diana.patel@example.com"
+      },
+      {
+        "field": "location",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "Bangalore, India"
+      },
+      {
+        "field": "location",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "Bangalore, Karnataka, India"
+      },
+      {
+        "field": "country",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "India"
+      },
+      {
+        "field": "country",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "India"
+      },
+      {
+        "field": "links",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "https://linkedin.com/in/dianapatel"
+      },
+      {
+        "field": "links",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "https://www.linkedin.com/in/dianapatel"
+      },
+      {
+        "field": "headline",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "Product Manager"
+      },
+      {
+        "field": "headline",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "Senior Product Manager"
+      },
+      {
+        "field": "years_experience",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": 10.0
+      },
+      {
+        "field": "years_experience",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": 10.0
+      },
+      {
+        "field": "skills",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": [
+          "Agile",
+          "Scrum",
+          "SQL",
+          "Figma",
+          "JIRA"
+        ]
+      },
+      {
+        "field": "skills",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": [
+          "Product Management",
+          "Agile",
+          "Scrum",
+          "SQL",
+          "Figma",
+          "A/B Testing",
+          "Roadmapping"
+        ]
+      },
+      {
+        "field": "experience",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "GlobalSoft"
+      },
+      {
+        "field": "experience",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "GlobalSoft Technologies"
+      },
+      {
+        "field": "education",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "MBA, IIM Bangalore; B.Tech Computer Science, IIT Delhi"
+      },
+      {
+        "field": "summary",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "Experienced product manager with 10+ years building B2B SaaS products. Currently leading a team of 15 at GlobalSoft, driving 40% YoY growth."
+      }
+    ]
+  },
+  {
+    "candidate_id": "5465b134-9b66-484e-88e7-8eb85bda32b9",
+    "full_name": "Frank Wilson",
+    "primary_email": "frank.w@example.com",
+    "phone": null,
+    "headline": "Junior Developer",
+    "location": {
+      "city": "Austin",
+      "region": "TX",
+      "country": "US"
+    },
+    "links": null,
+    "skills": [
+      {
+        "name": "Java",
+        "confidence": 0.8,
+        "sources": [
+          "csv",
+          "notes"
+        ]
+      },
+      {
+        "name": "Spring",
+        "confidence": 0.8,
+        "sources": [
+          "csv",
+          "notes"
+        ]
+      },
+      {
+        "name": "MySQL",
+        "confidence": 0.8,
+        "sources": [
+          "csv",
+          "notes"
+        ]
+      },
+      {
+        "name": "Git",
+        "confidence": 0.65,
+        "sources": [
+          "notes"
+        ]
+      }
+    ],
+    "years_experience": 1.0,
+    "education": null,
+    "experience": [
+      {
+        "company": "Acme Corp",
+        "title": "Junior Developer",
+        "start": null,
+        "end": null,
+        "summary": null
+      }
+    ],
+    "_confidence": {
+      "overall": 0.823,
+      "fields": {
+        "full_name": {
+          "score": 0.9,
+          "source_count": 2,
+          "has_conflict": false
+        },
+        "emails": {
+          "score": 0.75,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "headline": {
+          "score": 0.9,
+          "source_count": 2,
+          "has_conflict": false
+        },
+        "location": {
+          "score": 0.75,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "skills": {
+          "score": 0.75,
+          "source_count": 2,
+          "has_conflict": true
+        },
+        "years_experience": {
+          "score": 0.9,
+          "source_count": 2,
+          "has_conflict": false
+        },
+        "experience": {
+          "score": 0.9,
+          "source_count": 2,
+          "has_conflict": false
+        }
+      }
+    },
+    "_provenance": [
+      {
+        "field": "full_name",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "Frank Wilson"
+      },
+      {
+        "field": "full_name",
+        "source": "notes",
+        "method": "regex",
+        "raw_value": "Frank Wilson"
+      },
+      {
+        "field": "emails",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "frank.w@example.com"
+      },
+      {
+        "field": "emails",
+        "source": "notes",
+        "method": "regex",
+        "raw_value": "frank.w@example.com"
+      },
+      {
+        "field": "phones",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "555-0188"
+      },
+      {
+        "field": "location",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "Austin, TX"
+      },
+      {
+        "field": "location",
+        "source": "notes",
+        "method": "regex",
+        "raw_value": "Austin, Texas"
+      },
+      {
+        "field": "country",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "US"
+      },
+      {
+        "field": "headline",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "Junior Developer"
+      },
+      {
+        "field": "headline",
+        "source": "notes",
+        "method": "regex",
+        "raw_value": "Junior Developer"
+      },
+      {
+        "field": "years_experience",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": 1.0
+      },
+      {
+        "field": "years_experience",
+        "source": "notes",
+        "method": "regex",
+        "raw_value": 1.0
+      },
+      {
+        "field": "skills",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": [
+          "Java",
+          "Spring",
+          "MySQL"
+        ]
+      },
+      {
+        "field": "skills",
+        "source": "notes",
+        "method": "regex",
+        "raw_value": [
+          "Java",
+          "Spring",
+          "MySQL",
+          "Git"
+        ]
+      },
+      {
+        "field": "experience",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "Acme Corp"
+      },
+      {
+        "field": "experience",
+        "source": "notes",
+        "method": "regex",
+        "raw_value": "Acme Corp"
+      },
+      {
+        "field": "summary",
+        "source": "notes",
+        "method": "heuristic",
+        "raw_value": "Just graduated from UT Austin last year. Started at Acme as junior dev. Working primarily with Java and Spring Boot. Eager to learn, but needs mentorship. Good cultural fit."
+      }
+    ]
+  }
+]

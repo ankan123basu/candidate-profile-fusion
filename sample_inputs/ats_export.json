@@ -1,0 +1,81 @@
+{
+  "candidates": [
+    {
+      "candidate_id": "ATS-001",
+      "first_name": "Alice",
+      "last_name": "Chen",
+      "email_address": "alice.chen@example.com",
+      "phone_number": "4155550101",
+      "current_employer": "Acme Corporation",
+      "job_title": "Sr. Software Engineer",
+      "location": "San Francisco, California",
+      "country": "United States",
+      "skills": ["Python", "Django", "React", "PostgreSQL", "AWS", "Docker"],
+      "total_experience": 8,
+      "education": "M.S. Computer Science, Stanford University",
+      "certifications": ["AWS Solutions Architect"],
+      "linkedin_profile": "https://www.linkedin.com/in/alicechen",
+      "applied_date": "2024-01-15",
+      "stage": "Technical Interview",
+      "source_channel": "LinkedIn"
+    },
+    {
+      "candidate_id": "ATS-002",
+      "first_name": "Bob",
+      "last_name": "Martinez",
+      "email_address": "bob.martinez@example.com",
+      "phone_number": "+1-212-555-0199",
+      "current_employer": "DataFlow Inc.",
+      "job_title": "Senior Data Scientist",
+      "location": "New York City",
+      "country": "US",
+      "skills": ["Python", "Machine Learning", "TensorFlow", "PyTorch", "SQL", "Pandas", "NumPy"],
+      "total_experience": 5.5,
+      "education": "Ph.D. Statistics, Columbia University",
+      "certifications": ["Google Cloud Professional ML Engineer"],
+      "applied_date": "2024-02-01",
+      "stage": "Offer",
+      "source_channel": "Referral"
+    },
+    {
+      "candidate_id": "ATS-003",
+      "full_name": "Charlie Kim",
+      "email_address": "charlie.kim@example.com",
+      "phone_number": "+44 20 7946 0958",
+      "current_company": "TechStart Limited",
+      "position": "Full Stack Web Developer",
+      "location": "London, UK",
+      "country": "GB",
+      "technologies": ["JavaScript", "TypeScript", "Node.js", "React", "Vue.js", "MongoDB", "GraphQL"],
+      "experience_years": 3,
+      "education": "B.Sc. Computer Science, Imperial College London",
+      "linkedin": "https://linkedin.com/in/charliekim",
+      "github": "https://github.com/charliekim",
+      "applied_date": "2024-01-20",
+      "stage": "Screen"
+    },
+    {
+      "candidate_id": "ATS-004",
+      "this_is": "GARBAGE DATA",
+      "not_a_real_field": 12345
+    },
+    {
+      "candidate_id": "ATS-005",
+      "first_name": "Eva",
+      "last_name": "Rodriguez",
+      "email": "eva.rod@example.com",
+      "phone": "+16505550142",
+      "company": "CloudNine Systems",
+      "title": "Senior DevOps Engineer",
+      "location": "San Jose, California",
+      "country": "US",
+      "skills": ["Kubernetes", "Docker", "Terraform", "AWS", "CI/CD", "Linux", "Ansible", "Jenkins"],
+      "years_of_experience": 6,
+      "education": "B.S. Computer Engineering, UC Berkeley",
+      "certifications": ["CKA - Certified Kubernetes Administrator", "AWS DevOps Professional"],
+      "github_url": "https://github.com/evarodriguez",
+      "applied_date": "2024-03-01",
+      "stage": "Technical Interview"
+    }
+  ]
+}

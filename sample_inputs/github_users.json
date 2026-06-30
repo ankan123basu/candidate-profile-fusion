@@ -1,0 +1,4 @@
+[
+  {"username": "octocat", "note": "GitHub's mascot account — tests real API extraction"},
+  {"username": "torvalds", "note": "Linus Torvalds — tests extraction from a famous public profile"}
+]

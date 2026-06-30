@@ -1,0 +1,2197 @@
+[
+  {
+    "candidate_id": "a0abe5e8-4d51-4e64-8bb4-3954d1855d83",
+    "full_name": "Ankan Basu",
+    "emails": [
+      "ankanbasu10@gmail.com"
+    ],
+    "phones": [
+      "+916296441903"
+    ],
+    "location": {
+      "city": "West Bengal",
+      "region": "Kolkata 721401",
+      "country": null
+    },
+    "links": {
+      "linkedin": "https://linkedin.com/in/ankanbasu10",
+      "github": "https://github.com/ankan123basu/",
+      "portfolio": null,
+      "other": []
+    },
+    "headline": null,
+    "years_experience": null,
+    "skills": [
+      {
+        "name": "PHP",
+        "confidence": 0.65,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Git",
+        "confidence": 0.65,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Express",
+        "confidence": 0.65,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Data Structures",
+        "confidence": 0.65,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Python",
+        "confidence": 0.65,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Jenkins",
+        "confidence": 0.65,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "CSS",
+        "confidence": 0.65,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "React",
+        "confidence": 0.65,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Spring",
+        "confidence": 0.65,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "JavaScript",
+        "confidence": 0.65,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "PostgreSQL",
+        "confidence": 0.65,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "REST",
+        "confidence": 0.65,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "DevOps",
+        "confidence": 0.65,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "HTML",
+        "confidence": 0.65,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Node.js",
+        "confidence": 0.5,
+        "sources": []
+      },
+      {
+        "name": "Java",
+        "confidence": 0.65,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "MongoDB",
+        "confidence": 0.65,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Docker",
+        "confidence": 0.65,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Linux",
+        "confidence": 0.65,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "MySQL",
+        "confidence": 0.65,
+        "sources": [
+          "resume"
+        ]
+      }
+    ],
+    "experience": null,
+    "education": [
+      {
+        "institution": "Lovely Professional University 2023 – Present",
+        "degree": null,
+        "field": null,
+        "end_year": null
+      },
+      {
+        "institution": "Punjab",
+        "degree": "Bachelor of Technology - Computer Science and Engineering — CGPA: 9.04 Phagwara",
+        "field": null,
+        "end_year": null
+      },
+      {
+        "institution": "Contai Public School 2021 - 2022",
+        "degree": null,
+        "field": null,
+        "end_year": null
+      },
+      {
+        "institution": "Intermediate (class 12)",
+        "degree": "ISC",
+        "field": null,
+        "end_year": null
+      },
+      {
+        "institution": "West Bengal",
+        "degree": "Percentage: 97% Contai",
+        "field": null,
+        "end_year": null
+      }
+    ],
+    "provenance": [
+      {
+        "field": "full_name",
+        "source": "resume",
+        "method": "heuristic",
+        "raw_value": "Ankan Basu",
+        "timestamp": "2026-06-30 17:01:23.671252"
+      },
+      {
+        "field": "emails",
+        "source": "resume",
+        "method": "regex",
+        "raw_value": "ankanbasu10@gmail.com",
+        "timestamp": "2026-06-30 17:01:23.672255"
+      },
+      {
+        "field": "phones",
+        "source": "resume",
+        "method": "regex",
+        "raw_value": "+91 6296441903",
+        "timestamp": "2026-06-30 17:01:23.673247"
+      },
+      {
+        "field": "location",
+        "source": "resume",
+        "method": "heuristic",
+        "raw_value": "West Bengal, Kolkata 721401",
+        "timestamp": "2026-06-30 17:01:23.671252"
+      },
+      {
+        "field": "links",
+        "source": "resume",
+        "method": "regex",
+        "raw_value": "https://linkedin.com/in/ankanbasu10",
+        "timestamp": "2026-06-30 17:01:23.673247"
+      },
+      {
+        "field": "links",
+        "source": "resume",
+        "method": "regex",
+        "raw_value": "https://github.com/ankan123basu/",
+        "timestamp": "2026-06-30 17:01:23.674251"
+      },
+      {
+        "field": "skills",
+        "source": "resume",
+        "method": "heuristic",
+        "raw_value": [
+          "PHP",
+          "GIT",
+          "Express",
+          "Data Structures",
+          "Python",
+          "Jenkins",
+          "CSS",
+          "React",
+          "Spring",
+          "Javascript",
+          "Postgresql",
+          "Rest",
+          "Devops",
+          "Html",
+          "Nodejs",
+          "Java",
+          "Mongodb",
+          "Docker",
+          "Linux",
+          "Mysql"
+        ],
+        "timestamp": "2026-06-30 17:01:23.690252"
+      },
+      {
+        "field": "education",
+        "source": "resume",
+        "method": "heuristic",
+        "raw_value": "Lovely Professional University 2023 – Present; Bachelor of Technology - Computer Science and Engineering — CGPA: 9.04 Phagwara, Punjab; Contai Public School 2021 - 2022; ISC, Intermediate (class 12); Percentage: 97% Contai, West Bengal",
+        "timestamp": "2026-06-30 17:01:23.691252"
+      },
+      {
+        "field": "certifications",
+        "source": "resume",
+        "method": "heuristic",
+        "raw_value": [
+          "Spring 7 & Spring Boot 4 for Beginners May’ 2026",
+          "Udemy — Certificate",
+          "MongoDB Skillathon Industry certification Jul’ 2025",
+          "MongoDB — Certificate",
+          "Privacy and Security in Online Social Media Apr’ 2025"
+        ],
+        "timestamp": "2026-06-30 17:01:23.691252"
+      }
+    ],
+    "overall_confidence": 0.415
+  },
+  {
+    "candidate_id": "424fa947-e2de-4f5b-b9b6-3afbb00a865b",
+    "full_name": "Alice Chen",
+    "emails": [
+      "alice.chen@example.com"
+    ],
+    "phones": [
+      "+14155550101"
+    ],
+    "location": {
+      "city": "San Francisco",
+      "region": "CA",
+      "country": "US"
+    },
+    "links": {
+      "linkedin": "https://linkedin.com/in/alicechen",
+      "github": "https://github.com/alicechen",
+      "portfolio": null,
+      "other": []
+    },
+    "headline": "Senior Software Engineer",
+    "years_experience": 8.0,
+    "skills": [
+      {
+        "name": "Python",
+        "confidence": 1.0,
+        "sources": [
+          "ats_json",
+          "csv",
+          "notes",
+          "resume"
+        ]
+      },
+      {
+        "name": "Django",
+        "confidence": 0.95,
+        "sources": [
+          "ats_json",
+          "csv",
+          "resume"
+        ]
+      },
+      {
+        "name": "React",
+        "confidence": 0.95,
+        "sources": [
+          "ats_json",
+          "csv",
+          "resume"
+        ]
+      },
+      {
+        "name": "PostgreSQL",
+        "confidence": 0.95,
+        "sources": [
+          "ats_json",
+          "csv",
+          "resume"
+        ]
+      },
+      {
+        "name": "AWS",
+        "confidence": 1.0,
+        "sources": [
+          "ats_json",
+          "csv",
+          "notes",
+          "resume"
+        ]
+      },
+      {
+        "name": "Docker",
+        "confidence": 0.8,
+        "sources": [
+          "ats_json",
+          "resume"
+        ]
+      },
+      {
+        "name": "Kubernetes",
+        "confidence": 0.8,
+        "sources": [
+          "ats_json",
+          "resume"
+        ]
+      },
+      {
+        "name": "System Design",
+        "confidence": 0.95,
+        "sources": [
+          "ats_json",
+          "notes",
+          "resume"
+        ]
+      },
+      {
+        "name": "Microservices",
+        "confidence": 0.8,
+        "sources": [
+          "notes",
+          "resume"
+        ]
+      },
+      {
+        "name": "Git",
+        "confidence": 0.65,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "TypeScript",
+        "confidence": 0.65,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Jenkins",
+        "confidence": 0.65,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "JavaScript",
+        "confidence": 0.65,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Kafka",
+        "confidence": 0.65,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "CI/CD",
+        "confidence": 0.65,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Linux",
+        "confidence": 0.65,
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Redis",
+        "confidence": 0.65,
+        "sources": [
+          "resume"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Acme Corp",
+        "title": "Senior Software Engineer",
+        "start": null,
+        "end": null,
+        "summary": null
+      }
+    ],
+    "education": [
+      {
+        "institution": "Stanford University",
+        "degree": "M.S. Computer Science",
+        "field": null,
+        "end_year": null
+      },
+      {
+        "institution": "UC Berkeley",
+        "degree": "B.S. Computer Science",
+        "field": null,
+        "end_year": null
+      }
+    ],
+    "provenance": [
+      {
+        "field": "full_name",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "Alice Chen",
+        "timestamp": "2026-06-30 17:01:23.694566"
+      },
+      {
+        "field": "full_name",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "Alice Chen",
+        "timestamp": "2026-06-30 17:01:23.929714"
+      },
+      {
+        "field": "full_name",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "Alice Chen",
+        "timestamp": "2026-06-30 17:01:23.692234"
+      },
+      {
+        "field": "full_name",
+        "source": "resume",
+        "method": "heuristic",
+        "raw_value": "Alice Chen",
+        "timestamp": "2026-06-30 17:01:24.025814"
+      },
+      {
+        "field": "full_name",
+        "source": "notes",
+        "method": "regex",
+        "raw_value": "Alice Chen",
+        "timestamp": "2026-06-30 17:01:23.929714"
+      },
+      {
+        "field": "emails",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "alice.chen@example.com",
+        "timestamp": "2026-06-30 17:01:23.692234"
+      },
+      {
+        "field": "emails",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "alice.chen@example.com",
+        "timestamp": "2026-06-30 17:01:23.694566"
+      },
+      {
+        "field": "emails",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "alice.chen@example.com",
+        "timestamp": "2026-06-30 17:01:23.929714"
+      },
+      {
+        "field": "emails",
+        "source": "notes",
+        "method": "regex",
+        "raw_value": "alice.chen@example.com",
+        "timestamp": "2026-06-30 17:01:23.929714"
+      },
+      {
+        "field": "emails",
+        "source": "resume",
+        "method": "regex",
+        "raw_value": "alice.chen@example.com",
+        "timestamp": "2026-06-30 17:01:24.025814"
+      },
+      {
+        "field": "phones",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "4155550101",
+        "timestamp": "2026-06-30 17:01:23.692234"
+      },
+      {
+        "field": "phones",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "+1-415-555-0101",
+        "timestamp": "2026-06-30 17:01:23.694566"
+      },
+      {
+        "field": "phones",
+        "source": "notes",
+        "method": "regex",
+        "raw_value": "415-555-0101",
+        "timestamp": "2026-06-30 17:01:23.929714"
+      },
+      {
+        "field": "phones",
+        "source": "resume",
+        "method": "regex",
+        "raw_value": "(415) 555-0101",
+        "timestamp": "2026-06-30 17:01:24.026812"
+      },
+      {
+        "field": "location",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "San Francisco, CA",
+        "timestamp": "2026-06-30 17:01:23.694566"
+      },
+      {
+        "field": "location",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "San Francisco Bay Area",
+        "timestamp": "2026-06-30 17:01:23.929714"
+      },
+      {
+        "field": "location",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "San Francisco, California",
+        "timestamp": "2026-06-30 17:01:23.692234"
+      },
+      {
+        "field": "location",
+        "source": "notes",
+        "method": "regex",
+        "raw_value": "San Francisco",
+        "timestamp": "2026-06-30 17:01:23.929714"
+      },
+      {
+        "field": "country",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "US",
+        "timestamp": "2026-06-30 17:01:23.694566"
+      },
+      {
+        "field": "country",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "United States",
+        "timestamp": "2026-06-30 17:01:23.929714"
+      },
+      {
+        "field": "country",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "United States",
+        "timestamp": "2026-06-30 17:01:23.692234"
+      },
+      {
+        "field": "links",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "https://linkedin.com/in/alicechen",
+        "timestamp": "2026-06-30 17:01:23.694566"
+      },
+      {
+        "field": "links",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "https://www.linkedin.com/in/alicechen",
+        "timestamp": "2026-06-30 17:01:23.929714"
+      },
+      {
+        "field": "links",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "https://www.linkedin.com/in/alicechen",
+        "timestamp": "2026-06-30 17:01:23.692234"
+      },
+      {
+        "field": "links",
+        "source": "resume",
+        "method": "regex",
+        "raw_value": "https://www.linkedin.com/in/alicechen",
+        "timestamp": "2026-06-30 17:01:24.026812"
+      },
+      {
+        "field": "links",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "https://github.com/alicechen",
+        "timestamp": "2026-06-30 17:01:23.694566"
+      },
+      {
+        "field": "links",
+        "source": "resume",
+        "method": "regex",
+        "raw_value": "https://github.com/alicechen",
+        "timestamp": "2026-06-30 17:01:24.026812"
+      },
+      {
+        "field": "headline",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "Senior Software Engineer",
+        "timestamp": "2026-06-30 17:01:23.694566"
+      },
+      {
+        "field": "headline",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "Senior Software Engineer",
+        "timestamp": "2026-06-30 17:01:23.929714"
+      },
+      {
+        "field": "headline",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "Sr. Software Engineer",
+        "timestamp": "2026-06-30 17:01:23.692234"
+      },
+      {
+        "field": "headline",
+        "source": "notes",
+        "method": "regex",
+        "raw_value": "Senior Software Engineer",
+        "timestamp": "2026-06-30 17:01:23.929714"
+      },
+      {
+        "field": "years_experience",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": 8.0,
+        "timestamp": "2026-06-30 17:01:23.694566"
+      },
+      {
+        "field": "years_experience",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": 8.0,
+        "timestamp": "2026-06-30 17:01:23.929714"
+      },
+      {
+        "field": "years_experience",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": 8.0,
+        "timestamp": "2026-06-30 17:01:23.692234"
+      },
+      {
+        "field": "years_experience",
+        "source": "resume",
+        "method": "regex",
+        "raw_value": 8.0,
+        "timestamp": "2026-06-30 17:01:24.027834"
+      },
+      {
+        "field": "skills",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": [
+          "Python",
+          "Django",
+          "React",
+          "PostgreSQL",
+          "AWS",
+          "Docker"
+        ],
+        "timestamp": "2026-06-30 17:01:23.692234"
+      },
+      {
+        "field": "skills",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": [
+          "Python",
+          "Django",
+          "React",
+          "PostgreSQL",
+          "AWS"
+        ],
+        "timestamp": "2026-06-30 17:01:23.694566"
+      },
+      {
+        "field": "skills",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": [
+          "Python",
+          "Django",
+          "React",
+          "AWS",
+          "Docker",
+          "Kubernetes",
+          "System Design"
+        ],
+        "timestamp": "2026-06-30 17:01:23.929714"
+      },
+      {
+        "field": "skills",
+        "source": "notes",
+        "method": "regex",
+        "raw_value": [
+          "Python",
+          "System Design",
+          "Microservices",
+          "AWS",
+          "Leadership"
+        ],
+        "timestamp": "2026-06-30 17:01:23.929714"
+      },
+      {
+        "field": "skills",
+        "source": "resume",
+        "method": "heuristic",
+        "raw_value": [
+          "GIT",
+          "Typescript",
+          "Microservices",
+          "Python",
+          "Jenkins",
+          "React",
+          "Django",
+          "Javascript",
+          "Kubernetes",
+          "System Design",
+          "Kafka",
+          "Postgresql",
+          "Ci/Cd",
+          "Docker",
+          "Linux",
+          "AWS",
+          "Redis"
+        ],
+        "timestamp": "2026-06-30 17:01:24.027834"
+      },
+      {
+        "field": "experience",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "Acme Corp",
+        "timestamp": "2026-06-30 17:01:23.694566"
+      },
+      {
+        "field": "experience",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "Acme Corp",
+        "timestamp": "2026-06-30 17:01:23.929714"
+      },
+      {
+        "field": "experience",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "Acme Corporation",
+        "timestamp": "2026-06-30 17:01:23.692234"
+      },
+      {
+        "field": "experience",
+        "source": "notes",
+        "method": "regex",
+        "raw_value": "Acme Corp",
+        "timestamp": "2026-06-30 17:01:23.929714"
+      },
+      {
+        "field": "education",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "M.S. Computer Science, Stanford University; B.S. Computer Science, UC Berkeley",
+        "timestamp": "2026-06-30 17:01:23.929714"
+      },
+      {
+        "field": "education",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "M.S. Computer Science, Stanford University",
+        "timestamp": "2026-06-30 17:01:23.692234"
+      },
+      {
+        "field": "education",
+        "source": "resume",
+        "method": "heuristic",
+        "raw_value": "M.S. Computer Science — Stanford University (2016); B.S. Computer Science — UC Berkeley (2014)",
+        "timestamp": "2026-06-30 17:01:24.027834"
+      },
+      {
+        "field": "summary",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "Passionate software engineer with 8 years of experience building scalable web applications and cloud infrastructure. Led migration of monolithic architecture to microservices at Acme Corp, reducing deployment time by 70%.",
+        "timestamp": "2026-06-30 17:01:23.929714"
+      },
+      {
+        "field": "summary",
+        "source": "notes",
+        "method": "heuristic",
+        "raw_value": "Spoke with Alice on Jan 10. Very strong Python background. Led the migration from monolith to microservices at Acme. Impressive system design skills. She mentioned being interested in tech lead roles. Currently earning around $180k. Open to remote positions. Has AWS certifications.",
+        "timestamp": "2026-06-30 17:01:23.929714"
+      },
+      {
+        "field": "certifications",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": [
+          "AWS Solutions Architect"
+        ],
+        "timestamp": "2026-06-30 17:01:23.692234"
+      },
+      {
+        "field": "certifications",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": [
+          "AWS Solutions Architect Associate",
+          "AWS Developer Associate"
+        ],
+        "timestamp": "2026-06-30 17:01:23.929714"
+      },
+      {
+        "field": "certifications",
+        "source": "resume",
+        "method": "heuristic",
+        "raw_value": [
+          "AWS Solutions Architect Associate",
+          "AWS Developer Associate",
+          "Certified Kubernetes Administrator (CKA)"
+        ],
+        "timestamp": "2026-06-30 17:01:24.027834"
+      }
+    ],
+    "overall_confidence": 0.946
+  },
+  {
+    "candidate_id": "d514f12a-1715-4b8d-9e38-c1211c8ca6f4",
+    "full_name": "Bob Martinez",
+    "emails": [
+      "bob.martinez@example.com"
+    ],
+    "phones": [
+      "+12125550199"
+    ],
+    "location": {
+      "city": "New York",
+      "region": "NY",
+      "country": "US"
+    },
+    "links": {
+      "linkedin": "https://linkedin.com/in/bobmartinez",
+      "github": null,
+      "portfolio": null,
+      "other": []
+    },
+    "headline": "Data Scientist",
+    "years_experience": 5.0,
+    "skills": [
+      {
+        "name": "Python",
+        "confidence": 0.95,
+        "sources": [
+          "ats_json",
+          "csv",
+          "notes"
+        ]
+      },
+      {
+        "name": "Machine Learning",
+        "confidence": 0.95,
+        "sources": [
+          "ats_json",
+          "csv",
+          "notes"
+        ]
+      },
+      {
+        "name": "TensorFlow",
+        "confidence": 0.8,
+        "sources": [
+          "ats_json",
+          "csv"
+        ]
+      },
+      {
+        "name": "PyTorch",
+        "confidence": 0.65,
+        "sources": [
+          "ats_json"
+        ]
+      },
+      {
+        "name": "SQL",
+        "confidence": 0.8,
+        "sources": [
+          "ats_json",
+          "csv"
+        ]
+      },
+      {
+        "name": "Pandas",
+        "confidence": 0.8,
+        "sources": [
+          "ats_json",
+          "csv"
+        ]
+      },
+      {
+        "name": "NumPy",
+        "confidence": 0.65,
+        "sources": [
+          "ats_json"
+        ]
+      },
+      {
+        "name": "NLP",
+        "confidence": 0.65,
+        "sources": [
+          "notes"
+        ]
+      },
+      {
+        "name": "Deep Learning",
+        "confidence": 0.65,
+        "sources": [
+          "notes"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "DataFlow Inc",
+        "title": "Data Scientist",
+        "start": null,
+        "end": null,
+        "summary": null
+      }
+    ],
+    "education": [
+      {
+        "institution": "Columbia University",
+        "degree": "Ph.D. Statistics",
+        "field": null,
+        "end_year": null
+      }
+    ],
+    "provenance": [
+      {
+        "field": "full_name",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "Bob Martinez",
+        "timestamp": "2026-06-30 17:01:23.694566"
+      },
+      {
+        "field": "full_name",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "Bob Martinez",
+        "timestamp": "2026-06-30 17:01:23.692234"
+      },
+      {
+        "field": "full_name",
+        "source": "notes",
+        "method": "regex",
+        "raw_value": "Bob Martinez",
+        "timestamp": "2026-06-30 17:01:23.929714"
+      },
+      {
+        "field": "emails",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "bob.martinez@example.com",
+        "timestamp": "2026-06-30 17:01:23.692234"
+      },
+      {
+        "field": "emails",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "bob.martinez@example.com",
+        "timestamp": "2026-06-30 17:01:23.694566"
+      },
+      {
+        "field": "emails",
+        "source": "notes",
+        "method": "regex",
+        "raw_value": "bob.martinez@example.com",
+        "timestamp": "2026-06-30 17:01:23.929714"
+      },
+      {
+        "field": "phones",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "+1-212-555-0199",
+        "timestamp": "2026-06-30 17:01:23.692234"
+      },
+      {
+        "field": "phones",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "(212) 555-0199",
+        "timestamp": "2026-06-30 17:01:23.694566"
+      },
+      {
+        "field": "location",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "New York, NY",
+        "timestamp": "2026-06-30 17:01:23.694566"
+      },
+      {
+        "field": "location",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "New York City",
+        "timestamp": "2026-06-30 17:01:23.692234"
+      },
+      {
+        "field": "country",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "USA",
+        "timestamp": "2026-06-30 17:01:23.694566"
+      },
+      {
+        "field": "country",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "US",
+        "timestamp": "2026-06-30 17:01:23.692234"
+      },
+      {
+        "field": "links",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "https://linkedin.com/in/bobmartinez",
+        "timestamp": "2026-06-30 17:01:23.694566"
+      },
+      {
+        "field": "headline",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "Data Scientist",
+        "timestamp": "2026-06-30 17:01:23.694566"
+      },
+      {
+        "field": "headline",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "Senior Data Scientist",
+        "timestamp": "2026-06-30 17:01:23.692234"
+      },
+      {
+        "field": "headline",
+        "source": "notes",
+        "method": "regex",
+        "raw_value": "Data Scientist",
+        "timestamp": "2026-06-30 17:01:23.929714"
+      },
+      {
+        "field": "years_experience",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": 5.0,
+        "timestamp": "2026-06-30 17:01:23.694566"
+      },
+      {
+        "field": "years_experience",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": 5.5,
+        "timestamp": "2026-06-30 17:01:23.692234"
+      },
+      {
+        "field": "skills",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": [
+          "Python",
+          "Machine Learning",
+          "TensorFlow",
+          "PyTorch",
+          "SQL",
+          "Pandas",
+          "NumPy"
+        ],
+        "timestamp": "2026-06-30 17:01:23.692234"
+      },
+      {
+        "field": "skills",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": [
+          "Python",
+          "Machine Learning",
+          "TensorFlow",
+          "SQL",
+          "Pandas"
+        ],
+        "timestamp": "2026-06-30 17:01:23.694566"
+      },
+      {
+        "field": "skills",
+        "source": "notes",
+        "method": "regex",
+        "raw_value": [
+          "Machine Learning",
+          "NLP",
+          "Deep Learning",
+          "Python",
+          "Statistics"
+        ],
+        "timestamp": "2026-06-30 17:01:23.929714"
+      },
+      {
+        "field": "experience",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "DataFlow Inc",
+        "timestamp": "2026-06-30 17:01:23.694566"
+      },
+      {
+        "field": "experience",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "DataFlow Inc.",
+        "timestamp": "2026-06-30 17:01:23.692234"
+      },
+      {
+        "field": "experience",
+        "source": "notes",
+        "method": "regex",
+        "raw_value": "DataFlow",
+        "timestamp": "2026-06-30 17:01:23.929714"
+      },
+      {
+        "field": "education",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "Ph.D. Statistics, Columbia University",
+        "timestamp": "2026-06-30 17:01:23.692234"
+      },
+      {
+        "field": "summary",
+        "source": "notes",
+        "method": "heuristic",
+        "raw_value": "Interviewed Bob on Feb 5. PhD from Columbia in Statistics. Very strong in ML/AI space. Published 3 papers on NLP. Currently at DataFlow working on recommendation systems. Interested in moving to a larger company for more impact. Salary expectation: $200k+.",
+        "timestamp": "2026-06-30 17:01:23.929714"
+      },
+      {
+        "field": "certifications",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": [
+          "Google Cloud Professional ML Engineer"
+        ],
+        "timestamp": "2026-06-30 17:01:23.692234"
+      }
+    ],
+    "overall_confidence": 0.865
+  },
+  {
+    "candidate_id": "3a144777-cfc7-422c-9f87-43455416fcfd",
+    "full_name": "Charlie Kim",
+    "emails": [
+      "charlie.kim@example.com"
+    ],
+    "phones": [
+      "+442079460958"
+    ],
+    "location": {
+      "city": "London",
+      "region": null,
+      "country": "GB"
+    },
+    "links": {
+      "linkedin": "https://linkedin.com/in/charliekim",
+      "github": "https://github.com/charliekim",
+      "portfolio": null,
+      "other": []
+    },
+    "headline": "Full Stack Developer",
+    "years_experience": 3.0,
+    "skills": [
+      {
+        "name": "JavaScript",
+        "confidence": 0.8,
+        "sources": [
+          "ats_json",
+          "csv"
+        ]
+      },
+      {
+        "name": "TypeScript",
+        "confidence": 0.8,
+        "sources": [
+          "ats_json",
+          "csv"
+        ]
+      },
+      {
+        "name": "Node.js",
+        "confidence": 0.8,
+        "sources": [
+          "ats_json",
+          "csv"
+        ]
+      },
+      {
+        "name": "React",
+        "confidence": 0.8,
+        "sources": [
+          "ats_json",
+          "csv"
+        ]
+      },
+      {
+        "name": "Vue.js",
+        "confidence": 0.65,
+        "sources": [
+          "ats_json"
+        ]
+      },
+      {
+        "name": "MongoDB",
+        "confidence": 0.8,
+        "sources": [
+          "ats_json",
+          "csv"
+        ]
+      },
+      {
+        "name": "GraphQL",
+        "confidence": 0.65,
+        "sources": [
+          "ats_json"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "TechStart Ltd",
+        "title": "Full Stack Developer",
+        "start": null,
+        "end": null,
+        "summary": null
+      }
+    ],
+    "education": [
+      {
+        "institution": "Imperial College London",
+        "degree": "B.Sc. Computer Science",
+        "field": null,
+        "end_year": null
+      }
+    ],
+    "provenance": [
+      {
+        "field": "full_name",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "Charlie Kim",
+        "timestamp": "2026-06-30 17:01:23.694566"
+      },
+      {
+        "field": "full_name",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "Charlie Kim",
+        "timestamp": "2026-06-30 17:01:23.692234"
+      },
+      {
+        "field": "emails",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "charlie.kim@example.com",
+        "timestamp": "2026-06-30 17:01:23.692234"
+      },
+      {
+        "field": "emails",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "charlie.kim@example.com",
+        "timestamp": "2026-06-30 17:01:23.694566"
+      },
+      {
+        "field": "phones",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "+44 20 7946 0958",
+        "timestamp": "2026-06-30 17:01:23.692234"
+      },
+      {
+        "field": "phones",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "+44 20 7946 0958",
+        "timestamp": "2026-06-30 17:01:23.694566"
+      },
+      {
+        "field": "location",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "London",
+        "timestamp": "2026-06-30 17:01:23.694566"
+      },
+      {
+        "field": "location",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "London, UK",
+        "timestamp": "2026-06-30 17:01:23.692234"
+      },
+      {
+        "field": "country",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "UK",
+        "timestamp": "2026-06-30 17:01:23.694566"
+      },
+      {
+        "field": "country",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "GB",
+        "timestamp": "2026-06-30 17:01:23.692234"
+      },
+      {
+        "field": "links",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "https://linkedin.com/in/charliekim",
+        "timestamp": "2026-06-30 17:01:23.692234"
+      },
+      {
+        "field": "links",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "https://github.com/charliekim",
+        "timestamp": "2026-06-30 17:01:23.694566"
+      },
+      {
+        "field": "links",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "https://github.com/charliekim",
+        "timestamp": "2026-06-30 17:01:23.692234"
+      },
+      {
+        "field": "headline",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "Full Stack Developer",
+        "timestamp": "2026-06-30 17:01:23.694566"
+      },
+      {
+        "field": "headline",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "Full Stack Web Developer",
+        "timestamp": "2026-06-30 17:01:23.692234"
+      },
+      {
+        "field": "years_experience",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": 3.0,
+        "timestamp": "2026-06-30 17:01:23.694566"
+      },
+      {
+        "field": "years_experience",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": 3.0,
+        "timestamp": "2026-06-30 17:01:23.692234"
+      },
+      {
+        "field": "skills",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": [
+          "JavaScript",
+          "TypeScript",
+          "Node.js",
+          "React",
+          "Vue.js",
+          "MongoDB",
+          "GraphQL"
+        ],
+        "timestamp": "2026-06-30 17:01:23.692234"
+      },
+      {
+        "field": "skills",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": [
+          "JavaScript",
+          "TypeScript",
+          "Node.js",
+          "React",
+          "MongoDB"
+        ],
+        "timestamp": "2026-06-30 17:01:23.694566"
+      },
+      {
+        "field": "experience",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "TechStart Ltd",
+        "timestamp": "2026-06-30 17:01:23.694566"
+      },
+      {
+        "field": "experience",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "TechStart Limited",
+        "timestamp": "2026-06-30 17:01:23.692234"
+      },
+      {
+        "field": "education",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "B.Sc. Computer Science, Imperial College London",
+        "timestamp": "2026-06-30 17:01:23.692234"
+      }
+    ],
+    "overall_confidence": 0.837
+  },
+  {
+    "candidate_id": "92c4188a-4322-45cf-91b7-7b0aa28cfdcd",
+    "full_name": "Eva Rodriguez",
+    "emails": [
+      "eva.rod@example.com"
+    ],
+    "phones": [
+      "+16505550142"
+    ],
+    "location": {
+      "city": "San Jose",
+      "region": "CA",
+      "country": "US"
+    },
+    "links": {
+      "linkedin": null,
+      "github": "https://github.com/evarodriguez",
+      "portfolio": null,
+      "other": []
+    },
+    "headline": "DevOps Engineer",
+    "years_experience": 6.0,
+    "skills": [
+      {
+        "name": "Kubernetes",
+        "confidence": 0.8,
+        "sources": [
+          "ats_json",
+          "csv"
+        ]
+      },
+      {
+        "name": "Docker",
+        "confidence": 0.8,
+        "sources": [
+          "ats_json",
+          "csv"
+        ]
+      },
+      {
+        "name": "Terraform",
+        "confidence": 0.8,
+        "sources": [
+          "ats_json",
+          "csv"
+        ]
+      },
+      {
+        "name": "AWS",
+        "confidence": 0.8,
+        "sources": [
+          "ats_json",
+          "csv"
+        ]
+      },
+      {
+        "name": "CI/CD",
+        "confidence": 0.8,
+        "sources": [
+          "ats_json",
+          "csv"
+        ]
+      },
+      {
+        "name": "Linux",
+        "confidence": 0.8,
+        "sources": [
+          "ats_json",
+          "csv"
+        ]
+      },
+      {
+        "name": "Jenkins",
+        "confidence": 0.65,
+        "sources": [
+          "ats_json"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "CloudNine Systems",
+        "title": "DevOps Engineer",
+        "start": null,
+        "end": null,
+        "summary": null
+      }
+    ],
+    "education": [
+      {
+        "institution": "UC Berkeley",
+        "degree": "B.S. Computer Engineering",
+        "field": null,
+        "end_year": null
+      }
+    ],
+    "provenance": [
+      {
+        "field": "full_name",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "Eva Rodriguez",
+        "timestamp": "2026-06-30 17:01:23.695577"
+      },
+      {
+        "field": "full_name",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "Eva Rodriguez",
+        "timestamp": "2026-06-30 17:01:23.692234"
+      },
+      {
+        "field": "emails",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "eva.rod@example.com",
+        "timestamp": "2026-06-30 17:01:23.692234"
+      },
+      {
+        "field": "emails",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "eva.rod@example.com",
+        "timestamp": "2026-06-30 17:01:23.695577"
+      },
+      {
+        "field": "phones",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "+16505550142",
+        "timestamp": "2026-06-30 17:01:23.692234"
+      },
+      {
+        "field": "phones",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "+1 650-555-0142",
+        "timestamp": "2026-06-30 17:01:23.695577"
+      },
+      {
+        "field": "location",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "San Jose, CA",
+        "timestamp": "2026-06-30 17:01:23.695577"
+      },
+      {
+        "field": "location",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "San Jose, California",
+        "timestamp": "2026-06-30 17:01:23.692234"
+      },
+      {
+        "field": "country",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "US",
+        "timestamp": "2026-06-30 17:01:23.695577"
+      },
+      {
+        "field": "country",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "US",
+        "timestamp": "2026-06-30 17:01:23.692234"
+      },
+      {
+        "field": "links",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "https://github.com/evarodriguez",
+        "timestamp": "2026-06-30 17:01:23.695577"
+      },
+      {
+        "field": "links",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "https://github.com/evarodriguez",
+        "timestamp": "2026-06-30 17:01:23.692234"
+      },
+      {
+        "field": "headline",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "DevOps Engineer",
+        "timestamp": "2026-06-30 17:01:23.695577"
+      },
+      {
+        "field": "headline",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "Senior DevOps Engineer",
+        "timestamp": "2026-06-30 17:01:23.692234"
+      },
+      {
+        "field": "years_experience",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": 6.0,
+        "timestamp": "2026-06-30 17:01:23.695577"
+      },
+      {
+        "field": "years_experience",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": 6.0,
+        "timestamp": "2026-06-30 17:01:23.692234"
+      },
+      {
+        "field": "skills",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": [
+          "Kubernetes",
+          "Docker",
+          "Terraform",
+          "AWS",
+          "CI/CD",
+          "Linux",
+          "Ansible",
+          "Jenkins"
+        ],
+        "timestamp": "2026-06-30 17:01:23.692234"
+      },
+      {
+        "field": "skills",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": [
+          "Kubernetes",
+          "Docker",
+          "Terraform",
+          "AWS",
+          "CI/CD",
+          "Linux"
+        ],
+        "timestamp": "2026-06-30 17:01:23.695577"
+      },
+      {
+        "field": "experience",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "CloudNine Systems",
+        "timestamp": "2026-06-30 17:01:23.695577"
+      },
+      {
+        "field": "experience",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "CloudNine Systems",
+        "timestamp": "2026-06-30 17:01:23.692234"
+      },
+      {
+        "field": "education",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "B.S. Computer Engineering, UC Berkeley",
+        "timestamp": "2026-06-30 17:01:23.692234"
+      },
+      {
+        "field": "certifications",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": [
+          "CKA - Certified Kubernetes Administrator",
+          "AWS DevOps Professional"
+        ],
+        "timestamp": "2026-06-30 17:01:23.692234"
+      }
+    ],
+    "overall_confidence": 0.827
+  },
+  {
+    "candidate_id": "71b83623-7c5d-4eec-b1dc-c4ae34e08909",
+    "full_name": "Diana Patel",
+    "emails": [
+      "diana.patel@example.com"
+    ],
+    "phones": null,
+    "location": {
+      "city": "Bangalore",
+      "region": "India",
+      "country": "IN"
+    },
+    "links": {
+      "linkedin": "https://linkedin.com/in/dianapatel",
+      "github": null,
+      "portfolio": null,
+      "other": []
+    },
+    "headline": "Product Manager",
+    "years_experience": 10.0,
+    "skills": [
+      {
+        "name": "Agile",
+        "confidence": 0.8,
+        "sources": [
+          "ats_json",
+          "csv"
+        ]
+      },
+      {
+        "name": "Scrum",
+        "confidence": 0.8,
+        "sources": [
+          "ats_json",
+          "csv"
+        ]
+      },
+      {
+        "name": "SQL",
+        "confidence": 0.8,
+        "sources": [
+          "ats_json",
+          "csv"
+        ]
+      },
+      {
+        "name": "Figma",
+        "confidence": 0.8,
+        "sources": [
+          "ats_json",
+          "csv"
+        ]
+      },
+      {
+        "name": "R",
+        "confidence": 0.5,
+        "sources": []
+      },
+      {
+        "name": "Elasticsearch",
+        "confidence": 0.5,
+        "sources": []
+      }
+    ],
+    "experience": [
+      {
+        "company": "GlobalSoft",
+        "title": "Product Manager",
+        "start": null,
+        "end": null,
+        "summary": null
+      }
+    ],
+    "education": [
+      {
+        "institution": "IIM Bangalore",
+        "degree": "MBA",
+        "field": null,
+        "end_year": null
+      },
+      {
+        "institution": "IIT Delhi",
+        "degree": "B.Tech Computer Science",
+        "field": null,
+        "end_year": null
+      }
+    ],
+    "provenance": [
+      {
+        "field": "full_name",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "Diana Patel",
+        "timestamp": "2026-06-30 17:01:23.694566"
+      },
+      {
+        "field": "full_name",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "Diana Patel",
+        "timestamp": "2026-06-30 17:01:23.929714"
+      },
+      {
+        "field": "emails",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "diana.patel@example.com",
+        "timestamp": "2026-06-30 17:01:23.694566"
+      },
+      {
+        "field": "emails",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "diana.patel@example.com",
+        "timestamp": "2026-06-30 17:01:23.929714"
+      },
+      {
+        "field": "location",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "Bangalore, India",
+        "timestamp": "2026-06-30 17:01:23.694566"
+      },
+      {
+        "field": "location",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "Bangalore, Karnataka, India",
+        "timestamp": "2026-06-30 17:01:23.929714"
+      },
+      {
+        "field": "country",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "India",
+        "timestamp": "2026-06-30 17:01:23.694566"
+      },
+      {
+        "field": "country",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "India",
+        "timestamp": "2026-06-30 17:01:23.929714"
+      },
+      {
+        "field": "links",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "https://linkedin.com/in/dianapatel",
+        "timestamp": "2026-06-30 17:01:23.694566"
+      },
+      {
+        "field": "links",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "https://www.linkedin.com/in/dianapatel",
+        "timestamp": "2026-06-30 17:01:23.929714"
+      },
+      {
+        "field": "headline",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "Product Manager",
+        "timestamp": "2026-06-30 17:01:23.694566"
+      },
+      {
+        "field": "headline",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "Senior Product Manager",
+        "timestamp": "2026-06-30 17:01:23.929714"
+      },
+      {
+        "field": "years_experience",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": 10.0,
+        "timestamp": "2026-06-30 17:01:23.694566"
+      },
+      {
+        "field": "years_experience",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": 10.0,
+        "timestamp": "2026-06-30 17:01:23.929714"
+      },
+      {
+        "field": "skills",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": [
+          "Agile",
+          "Scrum",
+          "SQL",
+          "Figma",
+          "JIRA"
+        ],
+        "timestamp": "2026-06-30 17:01:23.694566"
+      },
+      {
+        "field": "skills",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": [
+          "Product Management",
+          "Agile",
+          "Scrum",
+          "SQL",
+          "Figma",
+          "A/B Testing",
+          "Roadmapping"
+        ],
+        "timestamp": "2026-06-30 17:01:23.929714"
+      },
+      {
+        "field": "experience",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "GlobalSoft",
+        "timestamp": "2026-06-30 17:01:23.694566"
+      },
+      {
+        "field": "experience",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "GlobalSoft Technologies",
+        "timestamp": "2026-06-30 17:01:23.929714"
+      },
+      {
+        "field": "education",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "MBA, IIM Bangalore; B.Tech Computer Science, IIT Delhi",
+        "timestamp": "2026-06-30 17:01:23.929714"
+      },
+      {
+        "field": "summary",
+        "source": "ats_json",
+        "method": "structured_parse",
+        "raw_value": "Experienced product manager with 10+ years building B2B SaaS products. Currently leading a team of 15 at GlobalSoft, driving 40% YoY growth.",
+        "timestamp": "2026-06-30 17:01:23.929714"
+      }
+    ],
+    "overall_confidence": 0.796
+  },
+  {
+    "candidate_id": "d8ce254f-f747-400b-b8e0-2c9819d921fe",
+    "full_name": "Frank Wilson",
+    "emails": [
+      "frank.w@example.com"
+    ],
+    "phones": null,
+    "location": {
+      "city": "Austin",
+      "region": "TX",
+      "country": "US"
+    },
+    "links": null,
+    "headline": "Junior Developer",
+    "years_experience": 1.0,
+    "skills": [
+      {
+        "name": "Java",
+        "confidence": 0.8,
+        "sources": [
+          "csv",
+          "notes"
+        ]
+      },
+      {
+        "name": "Spring",
+        "confidence": 0.8,
+        "sources": [
+          "csv",
+          "notes"
+        ]
+      },
+      {
+        "name": "MySQL",
+        "confidence": 0.8,
+        "sources": [
+          "csv",
+          "notes"
+        ]
+      },
+      {
+        "name": "Git",
+        "confidence": 0.65,
+        "sources": [
+          "notes"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Acme Corp",
+        "title": "Junior Developer",
+        "start": null,
+        "end": null,
+        "summary": null
+      }
+    ],
+    "education": null,
+    "provenance": [
+      {
+        "field": "full_name",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "Frank Wilson",
+        "timestamp": "2026-06-30 17:01:23.695577"
+      },
+      {
+        "field": "full_name",
+        "source": "notes",
+        "method": "regex",
+        "raw_value": "Frank Wilson",
+        "timestamp": "2026-06-30 17:01:23.929714"
+      },
+      {
+        "field": "emails",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "frank.w@example.com",
+        "timestamp": "2026-06-30 17:01:23.695577"
+      },
+      {
+        "field": "emails",
+        "source": "notes",
+        "method": "regex",
+        "raw_value": "frank.w@example.com",
+        "timestamp": "2026-06-30 17:01:23.929714"
+      },
+      {
+        "field": "phones",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "555-0188",
+        "timestamp": "2026-06-30 17:01:23.695577"
+      },
+      {
+        "field": "location",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "Austin, TX",
+        "timestamp": "2026-06-30 17:01:23.695577"
+      },
+      {
+        "field": "location",
+        "source": "notes",
+        "method": "regex",
+        "raw_value": "Austin, Texas",
+        "timestamp": "2026-06-30 17:01:23.929714"
+      },
+      {
+        "field": "country",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "US",
+        "timestamp": "2026-06-30 17:01:23.695577"
+      },
+      {
+        "field": "headline",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "Junior Developer",
+        "timestamp": "2026-06-30 17:01:23.695577"
+      },
+      {
+        "field": "headline",
+        "source": "notes",
+        "method": "regex",
+        "raw_value": "Junior Developer",
+        "timestamp": "2026-06-30 17:01:23.929714"
+      },
+      {
+        "field": "years_experience",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": 1.0,
+        "timestamp": "2026-06-30 17:01:23.695577"
+      },
+      {
+        "field": "years_experience",
+        "source": "notes",
+        "method": "regex",
+        "raw_value": 1.0,
+        "timestamp": "2026-06-30 17:01:23.929714"
+      },
+      {
+        "field": "skills",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": [
+          "Java",
+          "Spring",
+          "MySQL"
+        ],
+        "timestamp": "2026-06-30 17:01:23.695577"
+      },
+      {
+        "field": "skills",
+        "source": "notes",
+        "method": "regex",
+        "raw_value": [
+          "Java",
+          "Spring",
+          "MySQL",
+          "Git"
+        ],
+        "timestamp": "2026-06-30 17:01:23.929714"
+      },
+      {
+        "field": "experience",
+        "source": "csv",
+        "method": "structured_parse",
+        "raw_value": "Acme Corp",
+        "timestamp": "2026-06-30 17:01:23.695577"
+      },
+      {
+        "field": "experience",
+        "source": "notes",
+        "method": "regex",
+        "raw_value": "Acme Corp",
+        "timestamp": "2026-06-30 17:01:23.929714"
+      },
+      {
+        "field": "summary",
+        "source": "notes",
+        "method": "heuristic",
+        "raw_value": "Just graduated from UT Austin last year. Started at Acme as junior dev. Working primarily with Java and Spring Boot. Eager to learn, but needs mentorship. Good cultural fit.",
+        "timestamp": "2026-06-30 17:01:23.929714"
+      }
+    ],
+    "overall_confidence": 0.823
+  }
+]
