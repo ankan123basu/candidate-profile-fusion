@@ -103,91 +103,6 @@ pytest tests/ -v --tb=short
 | Resume (scanned) | `.pdf` | `ResumeExtractor` | **OCR fallback** via pytesseract (optional) |
 | Recruiter Notes | `.txt` | `NotesExtractor` | Regex + heuristic pattern matching |
 
-### GitHub API Integration
-
-The pipeline calls the **real GitHub REST API** to extract candidate data:
-
-```json
-[
-  {"username": "octocat"},
-  {"username": "torvalds"}
-]
-```
-
-Set `GITHUB_TOKEN` env var for higher rate limits (5000/hr vs 60/hr).
-
-### OCR Support (Optional)
-
-For scanned PDF resumes, the pipeline automatically falls back to OCR:
-
-```bash
-pip install pytesseract
-# Also requires Tesseract OCR engine installed on system PATH
-```
-
-If OCR libraries aren't installed, the pipeline gracefully degrades.
-
----
-
-## Canonical Profile Schema
-
-The canonical record uses a **nested complex schema** matching the assignment's default output format:
-
-| Field | Type | Normalization |
-|-------|------|---------------|
-| `candidate_id` | `string` (UUID) | Auto-generated |
-| `full_name` | `string` | Title case |
-| `emails` | `string[]` | Lowercase, deduplicated |
-| `phones` | `string[]` | E.164 via phonenumbers, deduplicated |
-| `location` | `{ city, region, country }` | Country → ISO-3166 alpha-2 |
-| `links` | `{ linkedin, github, portfolio, other[] }` | — |
-| `headline` | `string` | From current_title/position |
-| `years_experience` | `float` | — |
-| `skills` | `[{ name, confidence, sources[] }]` | Canonical taxonomy via rapidfuzz |
-| `experience` | `[{ company, title, start, end, summary }]` | Dates → YYYY-MM |
-| `education` | `[{ institution, degree, field, end_year }]` | — |
-| `provenance` | `[{ field, source, method, raw_value }]` | Auto-tracked |
-| `overall_confidence` | `float [0,1]` | Weighted average |
-
----
-
-## Runtime Config
-
-The projection config controls the output shape. It supports **field remapping, array indexing, and list mapping**:
-
-```json
-{
-  "fields": [
-    {"path": "full_name", "type": "string"},
-    {"path": "primary_email", "from": "emails[0]", "type": "string"},
-    {"path": "phone", "from": "phones[0]", "type": "string", "normalize": "E164"},
-    {"path": "skill_names", "from": "skills[].name", "type": "string[]"}
-  ],
-  "include_confidence": true,
-  "include_provenance": false,
-  "on_missing": "null"
-}
-```
-
-| Config Key | Values | Description |
-|-----------|--------|-------------|
-| `fields[].path` or `fields[].name` | string | Output field name |
-| `fields[].from` | string | Canonical field to read from (supports `[0]` index, `[].sub` map) |
-| `fields[].normalize` | bool/string | Override normalization for this field |
-| `include_confidence` | bool | Include `_confidence` object in output |
-| `include_provenance` | bool | Include `_provenance` array in output |
-| `on_missing` | `null`/`omit`/`error` | How to handle missing fields |
-
-### Provided Configs
-
-| Config | Description |
-|--------|-------------|
-| `default_config.json` | Full schema output — all canonical fields + provenance + confidence |
-| `custom_config.json` | Remapped fields (`emails[0]` → `primary_email`) + confidence scores |
-| `minimal_config.json` | 5 fields only, `on_missing: "omit"`, provenance enabled |
-
----
-
 ## Sample Output
 
 ### Default Config — full canonical output
@@ -251,50 +166,6 @@ Note: `primary_email` is remapped from `emails[0]`, `skills` from `skills[].name
 
 ---
 
-## Data Normalization (6 normalizers)
-
-All normalizers are **pure functions** — no side effects, return `None` on unparseable input, independently unit-testable.
-
-| Field | Library | Before (raw) | After (normalized) |
-|-------|---------|-------------|--------------------|
-| Phone | `phonenumbers` | `(415) 555-0101` | `+14155550101` (E.164) |
-| Country | `pycountry` | `United States` / `USA` / `US` | `US` (ISO-3166 alpha-2) |
-| Date | `python-dateutil` | `Jan 2024` / `2024-01-15` | `2024-01` (YYYY-MM) |
-| Skills | `rapidfuzz` | `js` / `k8s` / `postgres` | `JavaScript` / `Kubernetes` / `PostgreSQL` |
-| Email | built-in | `Alice@Example.COM` | `alice@example.com` |
-| Name | built-in | `alice  chen` | `Alice Chen` (title case) |
-
----
-
-## Confidence Scoring
-
-```
-field_confidence = base_weight(source) × method_modifier + corroboration_bonus − conflict_penalty
-```
-
-| Parameter | Values |
-|-----------|--------|
-| **Source weights** | csv=0.80, ats_json=0.85, github=0.70, linkedin=0.90, resume=0.60, notes=0.40 |
-| **Method modifiers** | structured_parse=1.0, api=0.95, regex=0.80, heuristic=0.60 |
-| **Corroboration bonus** | +0.10 per additional agreeing source (capped at +0.30) |
-| **Conflict penalty** | −0.15 when sources disagree |
-| **Overall confidence** | Weighted average by field importance (emails=2.0, full_name=1.5, skills=1.3, ...) |
-
----
-
-## Merge / Entity Resolution
-
-**Match cascade** (strongest signal first):
-1. **Email** — exact match (case-insensitive)
-2. **Phone** — normalized E.164 exact match
-3. **Fuzzy name + company** — rapidfuzz WRatio ≥ 85
-
-**Conflict resolution:** Source priority order (`csv > ats_json > github > linkedin > resume > notes`), with most-recent-wins as tiebreaker.
-
-**Skills** are merged as the **union** across all sources (not pick-winner).
-
----
-
 ## Edge Cases Handled (10 total — all tested)
 
 | # | Scenario | Handling | Test |
@@ -314,6 +185,136 @@ field_confidence = base_weight(source) × method_modifier + corroboration_bonus 
 ---
 <img width="1567" height="906" alt="image" src="https://github.com/user-attachments/assets/e986a01f-14e0-4009-b1f9-72187153971b" />
 
+## Confidence Scoring
+
+```
+field_confidence = base_weight(source) × method_modifier + corroboration_bonus − conflict_penalty
+```
+
+| Parameter | Values |
+|-----------|--------|
+| **Source weights** | csv=0.80, ats_json=0.85, github=0.70, linkedin=0.90, resume=0.60, notes=0.40 |
+| **Method modifiers** | structured_parse=1.0, api=0.95, regex=0.80, heuristic=0.60 |
+| **Corroboration bonus** | +0.10 per additional agreeing source (capped at +0.30) |
+| **Conflict penalty** | −0.15 when sources disagree |
+| **Overall confidence** | Weighted average by field importance (emails=2.0, full_name=1.5, skills=1.3, ...) |
+
+---
+
+## Data Normalization (6 normalizers)
+
+All normalizers are **pure functions** — no side effects, return `None` on unparseable input, independently unit-testable.
+
+| Field | Library | Before (raw) | After (normalized) |
+|-------|---------|-------------|--------------------|
+| Phone | `phonenumbers` | `(415) 555-0101` | `+14155550101` (E.164) |
+| Country | `pycountry` | `United States` / `USA` / `US` | `US` (ISO-3166 alpha-2) |
+| Date | `python-dateutil` | `Jan 2024` / `2024-01-15` | `2024-01` (YYYY-MM) |
+| Skills | `rapidfuzz` | `js` / `k8s` / `postgres` | `JavaScript` / `Kubernetes` / `PostgreSQL` |
+| Email | built-in | `Alice@Example.COM` | `alice@example.com` |
+| Name | built-in | `alice  chen` | `Alice Chen` (title case) |
+
+---
+
+## Merge / Entity Resolution
+
+**Match cascade** (strongest signal first):
+1. **Email** — exact match (case-insensitive)
+2. **Phone** — normalized E.164 exact match
+3. **Fuzzy name + company** — rapidfuzz WRatio ≥ 85
+
+**Conflict resolution:** Source priority order (`csv > ats_json > github > linkedin > resume > notes`), with most-recent-wins as tiebreaker.
+
+**Skills** are merged as the **union** across all sources (not pick-winner).
+
+---
+
+
+## Canonical Profile Schema
+
+The canonical record uses a **nested complex schema** matching the assignment's default output format:
+
+| Field | Type | Normalization |
+|-------|------|---------------|
+| `candidate_id` | `string` (UUID) | Auto-generated |
+| `full_name` | `string` | Title case |
+| `emails` | `string[]` | Lowercase, deduplicated |
+| `phones` | `string[]` | E.164 via phonenumbers, deduplicated |
+| `location` | `{ city, region, country }` | Country → ISO-3166 alpha-2 |
+| `links` | `{ linkedin, github, portfolio, other[] }` | — |
+| `headline` | `string` | From current_title/position |
+| `years_experience` | `float` | — |
+| `skills` | `[{ name, confidence, sources[] }]` | Canonical taxonomy via rapidfuzz |
+| `experience` | `[{ company, title, start, end, summary }]` | Dates → YYYY-MM |
+| `education` | `[{ institution, degree, field, end_year }]` | — |
+| `provenance` | `[{ field, source, method, raw_value }]` | Auto-tracked |
+| `overall_confidence` | `float [0,1]` | Weighted average |
+
+---
+
+## Runtime Config
+
+The projection config controls the output shape. It supports **field remapping, array indexing, and list mapping**:
+
+```json
+{
+  "fields": [
+    {"path": "full_name", "type": "string"},
+    {"path": "primary_email", "from": "emails[0]", "type": "string"},
+    {"path": "phone", "from": "phones[0]", "type": "string", "normalize": "E164"},
+    {"path": "skill_names", "from": "skills[].name", "type": "string[]"}
+  ],
+  "include_confidence": true,
+  "include_provenance": false,
+  "on_missing": "null"
+}
+```
+
+| Config Key | Values | Description |
+|-----------|--------|-------------|
+| `fields[].path` or `fields[].name` | string | Output field name |
+| `fields[].from` | string | Canonical field to read from (supports `[0]` index, `[].sub` map) |
+| `fields[].normalize` | bool/string | Override normalization for this field |
+| `include_confidence` | bool | Include `_confidence` object in output |
+| `include_provenance` | bool | Include `_provenance` array in output |
+| `on_missing` | `null`/`omit`/`error` | How to handle missing fields |
+
+### Provided Configs
+
+| Config | Description |
+|--------|-------------|
+| `default_config.json` | Full schema output — all canonical fields + provenance + confidence |
+| `custom_config.json` | Remapped fields (`emails[0]` → `primary_email`) + confidence scores |
+| `minimal_config.json` | 5 fields only, `on_missing: "omit"`, provenance enabled |
+
+---
+
+
+### GitHub API Integration
+
+The pipeline calls the **real GitHub REST API** to extract candidate data:
+
+```json
+[
+  {"username": "octocat"},
+  {"username": "torvalds"}
+]
+```
+
+Set `GITHUB_TOKEN` env var for higher rate limits (5000/hr vs 60/hr).
+
+### OCR Support (Optional)
+
+For scanned PDF resumes, the pipeline automatically falls back to OCR:
+
+```bash
+pip install pytesseract
+# Also requires Tesseract OCR engine installed on system PATH
+```
+
+If OCR libraries aren't installed, the pipeline gracefully degrades.
+
+---
 
 ## Explicit Scope-Outs
 
