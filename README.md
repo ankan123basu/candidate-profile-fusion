@@ -176,6 +176,9 @@ The projection config controls the output shape. It supports **field remapping, 
 ## Sample Output
 
 ### Default Config — full canonical output
+<img width="1386" height="960" alt="image" src="https://github.com/user-attachments/assets/dab0ee09-f990-4350-82a7-b54d5b1cfe46" />
+<img width="1350" height="903" alt="image" src="https://github.com/user-attachments/assets/c839b638-ba06-47fc-81d5-c093962896e8" />
+<img width="1343" height="851" alt="image" src="https://github.com/user-attachments/assets/4aa0bf97-214b-4ffc-941e-96ff012c6f70" />
 
 ```json
 {
