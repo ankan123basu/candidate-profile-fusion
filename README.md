@@ -2,8 +2,7 @@
 
 ![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Pydantic](https://img.shields.io/badge/Pydantic-v2-E92063?style=for-the-badge&logo=pydantic&logoColor=white)
-![Pytest](https://img.shields.io/badge/Tests-116%20passing-2EA44F?style=for-the-badge&logo=pytest&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
+
 
 A production-quality ETL pipeline that ingests candidate data from **multiple heterogeneous sources** (structured + unstructured), normalizes formats, merges duplicate candidates via entity resolution, scores confidence in each data point, and projects configurable output views — all driven by a runtime config with **zero code changes**.
 
