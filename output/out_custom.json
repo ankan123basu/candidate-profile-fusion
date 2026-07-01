@@ -4,26 +4,26 @@
     "primary_email": "ankanbasu10@gmail.com",
     "phone": "+916296441903",
     "skills": [
-      "Data Structures",
-      "Jenkins",
-      "MySQL",
-      "Linux",
-      "Git",
-      "PHP",
-      "DevOps",
-      "HTML",
-      "CSS",
-      "React",
       "Java",
-      "Python",
-      "Express",
-      "Spring",
-      "Docker",
-      "JavaScript",
+      "Jenkins",
+      "CSS",
+      "Data Structures",
       "REST",
+      "HTML",
+      "Git",
+      "DevOps",
       "PostgreSQL",
+      "Docker",
+      "Express",
+      "JavaScript",
+      "MySQL",
+      "Python",
+      "React",
+      "Spring",
       "MongoDB",
-      "Node.js"
+      "Node.js",
+      "PHP",
+      "Linux"
     ],
     "_confidence": {
       "overall": 0.415,
@@ -80,14 +80,14 @@
       "Kubernetes",
       "System Design",
       "Microservices",
-      "Jenkins",
-      "Linux",
-      "Redis",
-      "CI/CD",
-      "Git",
-      "TypeScript",
       "Kafka",
-      "JavaScript"
+      "Jenkins",
+      "Redis",
+      "Git",
+      "JavaScript",
+      "TypeScript",
+      "CI/CD",
+      "Linux"
     ],
     "_confidence": {
       "overall": 0.946,
@@ -463,6 +463,84 @@
         "experience": {
           "score": 0.9,
           "source_count": 2,
+          "has_conflict": false
+        }
+      }
+    }
+  },
+  {
+    "full_name": "The Octocat",
+    "primary_email": null,
+    "phone": null,
+    "skills": [
+      "CSS",
+      "HTML",
+      "Ruby"
+    ],
+    "_confidence": {
+      "overall": 0.665,
+      "fields": {
+        "full_name": {
+          "score": 0.665,
+          "source_count": 1,
+          "has_conflict": false
+        },
+        "location": {
+          "score": 0.665,
+          "source_count": 1,
+          "has_conflict": false
+        },
+        "skills": {
+          "score": 0.665,
+          "source_count": 1,
+          "has_conflict": false
+        },
+        "experience": {
+          "score": 0.665,
+          "source_count": 1,
+          "has_conflict": false
+        },
+        "links": {
+          "score": 0.665,
+          "source_count": 1,
+          "has_conflict": false
+        }
+      }
+    }
+  },
+  {
+    "full_name": "Linus Torvalds",
+    "primary_email": null,
+    "phone": null,
+    "skills": [
+      "C++"
+    ],
+    "_confidence": {
+      "overall": 0.665,
+      "fields": {
+        "full_name": {
+          "score": 0.665,
+          "source_count": 1,
+          "has_conflict": false
+        },
+        "location": {
+          "score": 0.665,
+          "source_count": 1,
+          "has_conflict": false
+        },
+        "skills": {
+          "score": 0.665,
+          "source_count": 1,
+          "has_conflict": false
+        },
+        "experience": {
+          "score": 0.665,
+          "source_count": 1,
+          "has_conflict": false
+        },
+        "links": {
+          "score": 0.665,
+          "source_count": 1,
           "has_conflict": false
         }
       }

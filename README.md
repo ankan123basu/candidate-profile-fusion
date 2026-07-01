@@ -1,14 +1,17 @@
-# Candidate Data ETL Pipeline
+# Multi-Source Candidate Data Transformer
 
-A production-quality ETL pipeline that ingests candidate data from **multiple heterogeneous sources** (structured + unstructured), normalizes, merges via entity resolution, scores confidence, and projects configurable output views.
+> **Eightfold Engineering Intern Assignment (Jul-Dec 2026)**
+> Built by **Ankan Basu** | ankanbasu10@gmail.com
+
+A production-quality ETL pipeline that ingests candidate data from **multiple heterogeneous sources** (structured + unstructured), normalizes formats, merges duplicate candidates via entity resolution, scores confidence in each data point, and projects configurable output views — all driven by a runtime config with **zero code changes**.
 
 ## Architecture
 
 ```
-detect → extract → normalize → merge → confidence → project → validate
+Ingest → Parse → Cleanse → Resolve → Score → Reshape → Certify
 ```
 
-**Key design principle:** The canonical `CandidateProfile` is the single source of truth with a **nested complex schema** (lists of objects, nested dicts). The projection config is a **pure read-only view** — it never mutates the canonical record.
+**Key design principle:** The canonical `CandidateProfile` is the single source of truth with a **nested complex schema** (lists of objects, nested dicts). The projection config is a **pure read-only lens** — it never mutates the canonical record.
 
 ## Quick Start
 
@@ -54,15 +57,15 @@ pytest tests/ -v --tb=short
 
 ## Pipeline Stages
 
-| Stage | Module | Description |
-|-------|--------|-------------|
-| **Detect** | `src/detect.py` | Auto-detect source type from file extension + JSON shape analysis |
-| **Extract** | `src/extract/` | Per-source parsers emit `RawField` objects — never mutate shared state |
-| **Normalize** | `src/normalize.py` | Pure functions: phone→E.164, date→YYYY-MM, country→ISO-3166, skill→taxonomy |
-| **Merge** | `src/merge.py` | Entity resolution (email→phone→fuzzy name+company) + flat→nested transformation |
-| **Confidence** | `src/confidence.py` | Per-field + overall scoring based on source reliability, corroboration, method |
-| **Project** | `src/project.py` | Config-driven reshaping — field selection, remapping, array indexing, normalize toggles |
-| **Validate** | `src/validate.py` | JSON-schema validation of both canonical and projected output |
+| Stage | Module | What It Does | Key Design Choice |
+|-------|--------|-------------|-------------------|
+| **Ingest** | `src/detect.py` | Routes each file to the right parser | Content-aware: inspects JSON key structure to distinguish ATS from GitHub from LinkedIn |
+| **Parse** | `src/extract/` | Per-source extractors emit `RawField` tuples | Emit **flat fields** only — never build nested objects, independently testable |
+| **Cleanse** | `src/normalize.py` | Pure functions: phone→E.164, country→ISO-3166, skill→taxonomy, date→YYYY-MM | Returns `None` on unparseable input — **never throws**, never guesses |
+| **Resolve** | `src/merge.py` | Entity resolution (email→phone→fuzzy cascade) + flat-to-nested build | **Single adapter layer**: only place flat fields become the nested `CandidateProfile` |
+| **Score** | `src/confidence.py` | Per-field confidence = source_weight × method + corroboration − conflict | Documented formula, not a black box |
+| **Reshape** | `src/project.py` | Config-driven projection: field selection, path remapping, array mapping | Config is a **read-only lens** — supports `null`/`omit`/`error` for missing values |
+| **Certify** | `src/validate.py` | JSON-schema validation of canonical record AND projected output | Two-layer: Pydantic (internal) + jsonschema (output conformance) |
 
 ---
 

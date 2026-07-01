@@ -15,14 +15,14 @@ PIPELINE EXPLANATION REPORT
 
 2. EXTRACTION RESULTS
 ----------------------------------------
-   Raw candidate records extracted: 7
-   Total raw field values: 171
+   Raw candidate records extracted: 9
+   Total raw field values: 185
 
 3. ENTITY RESOLUTION (MERGE)
 ----------------------------------------
-   Input records: 7
-   Output profiles: 7
-   Deduplication ratio: 7 -> 7 (0 duplicates merged)
+   Input records: 9
+   Output profiles: 9
+   Deduplication ratio: 9 -> 9 (0 duplicates merged)
 
 4. CANDIDATE PROFILES
 ----------------------------------------
@@ -155,9 +155,19 @@ PIPELINE EXPLANATION REPORT
             -> csv (structured_parse): ['Java', 'Spring', 'MySQL']
             -> notes (regex): ['Java', 'Spring', 'MySQL', 'Git']
 
+   [8] The Octocat <no email>
+       Sources: github
+       Overall confidence: 0.665
+       Fields with conflicts: 0
+
+   [9] Linus Torvalds <no email>
+       Sources: github
+       Overall confidence: 0.665
+       Fields with conflicts: 0
+
 5. CONFIDENCE SUMMARY
 ----------------------------------------
-   Average overall confidence: 0.787
+   Average overall confidence: 0.760
    Range: 0.415 - 0.946
 
 6. PROJECTION CONFIG

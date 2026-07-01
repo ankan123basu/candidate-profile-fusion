@@ -1,7 +1,7 @@
 """
 CLI entry point — wires the full ETL pipeline together.
 
-Pipeline: detect → extract → normalize → merge → confidence → project → validate
+Pipeline: Ingest → Parse → Cleanse → Resolve → Score → Reshape → Certify
 
 Usage:
   python -m src.cli --inputs sample_inputs/ --config config/example_config.json --output out.json
@@ -189,7 +189,7 @@ def main(inputs: str, config: str, output: str, verbose: bool, explain: bool) ->
     """
     setup_logging(verbose)
     logger.info("=" * 60)
-    logger.info("Candidate Data ETL Pipeline")
+    logger.info("Multi-Source Candidate Data Transformer")
     logger.info("=" * 60)
 
     # --- Load config ---
@@ -202,18 +202,18 @@ def main(inputs: str, config: str, output: str, verbose: bool, explain: bool) ->
         logger.error("Failed to load config: %s", e)
         sys.exit(1)
 
-    # --- Phase 1: Detect sources ---
+    # --- Phase 1: Ingest ---
     logger.info("-" * 40)
-    logger.info("Phase 1: Detecting sources...")
+    logger.info("Phase 1: Ingesting sources...")
     source_files = get_all_source_files(inputs)
     if not source_files:
         logger.error("No source files found in %s", inputs)
         sys.exit(1)
     logger.info("Found %d source files", len(source_files))
 
-    # --- Phase 2: Extract ---
+    # --- Phase 2: Parse ---
     logger.info("-" * 40)
-    logger.info("Phase 2: Extracting data...")
+    logger.info("Phase 2: Parsing raw fields...")
     all_records: Dict[str, List[RawField]] = {}
 
     for file_path, source_type in source_files:
@@ -239,34 +239,34 @@ def main(inputs: str, config: str, output: str, verbose: bool, explain: bool) ->
 
     logger.info("Total raw records: %d", len(all_records))
 
-    # --- Phase 3: Merge (includes normalization) ---
+    # --- Phase 3: Cleanse + Resolve ---
     logger.info("-" * 40)
-    logger.info("Phase 3: Merging and resolving...")
+    logger.info("Phase 3: Cleansing & resolving entities...")
     profiles = merge_all(all_records, apply_normalization=True)
     logger.info("Merged into %d canonical profiles", len(profiles))
 
-    # --- Phase 4: Confidence scoring ---
+    # --- Phase 4: Score ---
     logger.info("-" * 40)
-    logger.info("Phase 4: Computing confidence scores...")
+    logger.info("Phase 4: Scoring field confidence...")
     for profile in profiles:
         compute_confidence(profile)
 
-    # --- Phase 5: Validate canonical ---
+    # --- Phase 5: Certify canonical ---
     logger.info("-" * 40)
-    logger.info("Phase 5: Validating canonical profiles...")
+    logger.info("Phase 5: Certifying canonical profiles...")
     for i, profile in enumerate(profiles):
         vr = validate_canonical(profile)
         if not vr.is_valid:
             logger.warning("Canonical validation issues for profile %d: %s", i, vr.errors)
 
-    # --- Phase 6: Project ---
+    # --- Phase 6: Reshape ---
     logger.info("-" * 40)
-    logger.info("Phase 6: Projecting output...")
+    logger.info("Phase 6: Reshaping output per config...")
     projected = project_all(profiles, config_data)
 
-    # --- Phase 7: Validate projected output ---
+    # --- Phase 7: Certify projected ---
     logger.info("-" * 40)
-    logger.info("Phase 7: Validating projected output...")
+    logger.info("Phase 7: Certifying projected output...")
     validation_results = validate_all_projected(projected, config_data)
     valid_count = sum(1 for vr in validation_results if vr.is_valid)
     logger.info("Valid: %d/%d", valid_count, len(validation_results))
