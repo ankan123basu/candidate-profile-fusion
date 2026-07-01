@@ -12,6 +12,21 @@ A production-quality ETL pipeline that ingests candidate data from **multiple he
 └─────────┘   │ tuples) │   │ no-throw│   │ nested canon)│   └─────────┘   └─────────┘   └─────────┘
               └─────────┘   └─────────┘   └──────────────┘
 ```
+---
+
+## Pipeline Stages
+
+| Stage | Module | What It Does | Key Design Choice |
+|-------|--------|-------------|-------------------|
+| **Ingest** | `src/detect.py` | Routes each file to the right parser | Content-aware: inspects JSON key structure to distinguish ATS from GitHub from LinkedIn |
+| **Parse** | `src/extract/` | Per-source extractors emit `RawField` tuples | Emit **flat fields** only — never build nested objects, independently testable |
+| **Cleanse** | `src/normalize.py` | Pure functions: phone→E.164, country→ISO-3166, skill→taxonomy, date→YYYY-MM | Returns `None` on unparseable input — **never throws**, never guesses |
+| **Resolve** | `src/merge.py` | Entity resolution (email→phone→fuzzy cascade) + flat-to-nested build | **Single adapter layer**: only place flat fields become the nested `CandidateProfile` |
+| **Score** | `src/confidence.py` | Per-field confidence = source_weight × method + corroboration − conflict | Documented formula, not a black box |
+| **Reshape** | `src/project.py` | Config-driven projection: field selection, path remapping, array mapping | Config is a **read-only lens** — supports `null`/`omit`/`error` for missing values |
+| **Certify** | `src/validate.py` | JSON-schema validation of canonical record AND projected output | Two-layer: Pydantic (internal) + jsonschema (output conformance) |
+
+---
 
 **Key design principle:** The canonical `CandidateProfile` is the single source of truth with a **nested complex schema** (lists of objects, nested dicts). The projection config is a **pure read-only lens** — it never mutates the canonical record.
 
@@ -54,22 +69,6 @@ python -m src.cli --inputs sample_inputs/ --config config/minimal_config.json --
 ```bash
 pytest tests/ -v --tb=short
 ```
-
----
-
-## Pipeline Stages
-
-| Stage | Module | What It Does | Key Design Choice |
-|-------|--------|-------------|-------------------|
-| **Ingest** | `src/detect.py` | Routes each file to the right parser | Content-aware: inspects JSON key structure to distinguish ATS from GitHub from LinkedIn |
-| **Parse** | `src/extract/` | Per-source extractors emit `RawField` tuples | Emit **flat fields** only — never build nested objects, independently testable |
-| **Cleanse** | `src/normalize.py` | Pure functions: phone→E.164, country→ISO-3166, skill→taxonomy, date→YYYY-MM | Returns `None` on unparseable input — **never throws**, never guesses |
-| **Resolve** | `src/merge.py` | Entity resolution (email→phone→fuzzy cascade) + flat-to-nested build | **Single adapter layer**: only place flat fields become the nested `CandidateProfile` |
-| **Score** | `src/confidence.py` | Per-field confidence = source_weight × method + corroboration − conflict | Documented formula, not a black box |
-| **Reshape** | `src/project.py` | Config-driven projection: field selection, path remapping, array mapping | Config is a **read-only lens** — supports `null`/`omit`/`error` for missing values |
-| **Certify** | `src/validate.py` | JSON-schema validation of canonical record AND projected output | Two-layer: Pydantic (internal) + jsonschema (output conformance) |
-
----
 
 ## Supported Sources
 
