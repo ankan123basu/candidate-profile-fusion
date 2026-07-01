@@ -1,4 +1,5 @@
 # Multi-Source Identity Resolution Transformer
+(Eightfold-AI Assignment)
 
 ![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Pydantic](https://img.shields.io/badge/Pydantic-v2-E92063?style=for-the-badge&logo=pydantic&logoColor=white)
