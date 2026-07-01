@@ -1,5 +1,10 @@
 # Multi-Source Candidate Data Transformer
 
+![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Pydantic](https://img.shields.io/badge/Pydantic-v2-E92063?style=for-the-badge&logo=pydantic&logoColor=white)
+![Pytest](https://img.shields.io/badge/Tests-116%20passing-2EA44F?style=for-the-badge&logo=pytest&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
+
 A production-quality ETL pipeline that ingests candidate data from **multiple heterogeneous sources** (structured + unstructured), normalizes formats, merges duplicate candidates via entity resolution, scores confidence in each data point, and projects configurable output views — all driven by a runtime config with **zero code changes**.
 
 ## Architecture — 7-Stage Pipeline
@@ -28,7 +33,19 @@ A production-quality ETL pipeline that ingests candidate data from **multiple he
 
 ---
 
-**Key design principle:** The canonical `CandidateProfile` is the single source of truth with a **nested complex schema** (lists of objects, nested dicts). The projection config is a **pure read-only lens** — it never mutates the canonical record.
+## Core Design Decisions
+
+| Decision | Why |
+|----------|-----|
+| **`RawField` as universal atom** | Every extractor emits `RawField(field, value, source, source_id, extraction_method)` — downstream stages are source-agnostic |
+| **Email→Phone→Fuzzy match cascade** | Entity resolution groups candidates by email first (exact), then normalized phone, then fuzzy name+company (threshold 85) — avoids O(n²) all-pairs comparison |
+| **`source_weight × method_modifier + corroboration − conflict`** | Explainable math, not ML. Every confidence score is deterministic and traceable |
+| **Projection is read-only** | `project.py` reads from the canonical `CandidateProfile` via dot-path lookups (`emails[0]`, `skills[].name`) — it never writes back to or mutates the profile |
+| **Normalizers return `None`, never throw** | `normalize_phone`, `normalize_country`, `normalize_skill` all catch exceptions and return `None` — pipeline continues gracefully |
+| **Two-layer validation (Certify stage)** | Canonical profiles validated via Pydantic model constraints; projected output validated via `jsonschema` against a schema derived from the config |
+| **LinkedIn mocked as static JSON fixture** | LinkedIn's ToS prohibits scraping — a static fixture demonstrates the pipeline handles the data shape without legal risk |
+
+---
 
 ## Quick Start
 
@@ -371,3 +388,33 @@ field_confidence = base_weight(source) × method_modifier + corroboration_bonus 
 | Variable | Purpose | Default |
 |----------|---------|---------|
 | `GITHUB_TOKEN` | GitHub API token for higher rate limits (5000/hr vs 60/hr) | None (unauthenticated) |
+
+---
+
+## License
+
+This project is licensed under the **MIT License** — see below.
+
+```
+MIT License
+
+Copyright (c) 2026 Ankan Basu
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
