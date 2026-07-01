@@ -226,6 +226,8 @@ Using the **exact example config from the assignment** (`config/custom_config.js
   }
 }
 ```
+<img width="626" height="792" alt="image" src="https://github.com/user-attachments/assets/72a8b6ff-3f0b-4deb-9535-9dd90670d4b4" />
+<img width="626" height="768" alt="image" src="https://github.com/user-attachments/assets/5103346d-d64d-4eca-8675-95bad03df2db" />
 
 Note: `primary_email` is remapped from `emails[0]`, `skills` from `skills[].name` — **same engine, no code changes, just a different config file.**
 
@@ -290,7 +292,10 @@ field_confidence = base_weight(source) × method_modifier + corroboration_bonus 
 | 9 | **Skills union across sources** | All unique skills merged, not pick-winner | `test_edge_cases.py::TestEdgeCase9` |
 | 10 | **Phone formats merge (E.164)** | Different formats normalized, then matched | `test_edge_cases.py::TestEdgeCase10` |
 
+
 ---
+<img width="1567" height="906" alt="image" src="https://github.com/user-attachments/assets/e986a01f-14e0-4009-b1f9-72187153971b" />
+
 
 ## Explicit Scope-Outs
 
