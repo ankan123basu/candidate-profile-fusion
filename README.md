@@ -1,14 +1,16 @@
 # Multi-Source Candidate Data Transformer
 
-> **Eightfold Engineering Intern Assignment (Jul-Dec 2026)**
-> Built by **Ankan Basu** | ankanbasu10@gmail.com
-
 A production-quality ETL pipeline that ingests candidate data from **multiple heterogeneous sources** (structured + unstructured), normalizes formats, merges duplicate candidates via entity resolution, scores confidence in each data point, and projects configurable output views — all driven by a runtime config with **zero code changes**.
 
-## Architecture
+## Architecture — 7-Stage Pipeline
 
 ```
-Ingest → Parse → Cleanse → Resolve → Score → Reshape → Certify
+┌─────────┐   ┌─────────┐   ┌─────────┐   ┌──────────────┐   ┌─────────┐   ┌─────────┐   ┌─────────┐
+│ INGEST  │──▶│  PARSE  │──▶│ CLEANSE │──▶│   RESOLVE    │──▶│  SCORE  │──▶│ RESHAPE │──▶│ CERTIFY │
+│(route to│   │(emit    │   │(pure fn │   │(cluster +    │   │(trust   │   │(config  │   │(schema  │
+│ parser) │   │ RawField│   │ per-type│   │ fuse + build │   │ formula)│   │ lens)   │   │ guard)  │
+└─────────┘   │ tuples) │   │ no-throw│   │ nested canon)│   └─────────┘   └─────────┘   └─────────┘
+              └─────────┘   └─────────┘   └──────────────┘
 ```
 
 **Key design principle:** The canonical `CandidateProfile` is the single source of truth with a **nested complex schema** (lists of objects, nested dicts). The projection config is a **pure read-only lens** — it never mutates the canonical record.
