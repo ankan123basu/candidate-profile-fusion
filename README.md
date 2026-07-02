@@ -118,6 +118,7 @@ field_confidence = base_weight(source) × method_modifier + corroboration_bonus 
 
 ---
 <img width="1567" height="906" alt="image" src="https://github.com/user-attachments/assets/e986a01f-14e0-4009-b1f9-72187153971b" />
+
 ## Data Normalization (6 normalizers)
 
 All normalizers are **pure functions** — no side effects, return `None` on unparseable input, independently unit-testable.
