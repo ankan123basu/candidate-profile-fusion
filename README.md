@@ -85,6 +85,66 @@ python -m src.cli --inputs sample_inputs/ --config config/minimal_config.json --
 ```bash
 pytest tests/ -v --tb=short
 ```
+## Confidence Scoring
+
+```
+field_confidence = base_weight(source) × method_modifier + corroboration_bonus − conflict_penalty
+```
+
+| Parameter | Values |
+|-----------|--------|
+| **Source weights** | csv=0.80, ats_json=0.85, github=0.70, linkedin=0.90, resume=0.60, notes=0.40 |
+| **Method modifiers** | structured_parse=1.0, api=0.95, regex=0.80, heuristic=0.60 |
+| **Corroboration bonus** | +0.10 per additional agreeing source (capped at +0.30) |
+| **Conflict penalty** | −0.15 when sources disagree |
+| **Overall confidence** | Weighted average by field importance (emails=2.0, full_name=1.5, skills=1.3, ...) |
+
+---
+## Edge Cases Handled (10 total — all tested)
+
+| # | Scenario | Handling | Test |
+|---|----------|----------|------|
+| 1 | **Missing source file** | Pipeline continues, unaffected fields stay null | `test_edge_cases.py::TestEdgeCase1` |
+| 2 | **Duplicate candidate, different name spellings** | Merged via email match; CSV name wins | `test_edge_cases.py::TestEdgeCase2` |
+| 3 | **Conflicting field values across sources** | Source priority picks winner; confidence drops by 0.15 | `test_edge_cases.py::TestEdgeCase3` |
+| 4 | **Phone without country code** | Defaults to US region via phonenumbers; null if invalid | `test_edge_cases.py::TestEdgeCase4` |
+| 5 | **Malformed/garbage ATS JSON** | Catches JSONDecodeError, skips bad records, logs error | `test_edge_cases.py::TestEdgeCase5` |
+| 6 | **Unicode/international names (CJK, accents)** | Preserved correctly through normalization | `test_edge_cases.py::TestEdgeCase6` |
+| 7 | **Empty/null skills list** | Treated as no skills, doesn't crash | `test_edge_cases.py::TestEdgeCase7` |
+| 8 | **Three-way field conflict** | Highest-priority source wins; conflict tracked | `test_edge_cases.py::TestEdgeCase8` |
+| 9 | **Skills union across sources** | All unique skills merged, not pick-winner | `test_edge_cases.py::TestEdgeCase9` |
+| 10 | **Phone formats merge (E.164)** | Different formats normalized, then matched | `test_edge_cases.py::TestEdgeCase10` |
+
+
+---
+<img width="1567" height="906" alt="image" src="https://github.com/user-attachments/assets/e986a01f-14e0-4009-b1f9-72187153971b" />
+## Data Normalization (6 normalizers)
+
+All normalizers are **pure functions** — no side effects, return `None` on unparseable input, independently unit-testable.
+
+| Field | Library | Before (raw) | After (normalized) |
+|-------|---------|-------------|--------------------|
+| Phone | `phonenumbers` | `(415) 555-0101` | `+14155550101` (E.164) |
+| Country | `pycountry` | `United States` / `USA` / `US` | `US` (ISO-3166 alpha-2) |
+| Date | `python-dateutil` | `Jan 2024` / `2024-01-15` | `2024-01` (YYYY-MM) |
+| Skills | `rapidfuzz` | `js` / `k8s` / `postgres` | `JavaScript` / `Kubernetes` / `PostgreSQL` |
+| Email | built-in | `Alice@Example.COM` | `alice@example.com` |
+| Name | built-in | `alice  chen` | `Alice Chen` (title case) |
+
+---
+
+## Merge / Entity Resolution
+
+**Match cascade** (strongest signal first):
+1. **Email** — exact match (case-insensitive)
+2. **Phone** — normalized E.164 exact match
+3. **Fuzzy name + company** — rapidfuzz WRatio ≥ 85
+
+**Conflict resolution:** Source priority order (`csv > ats_json > github > linkedin > resume > notes`), with most-recent-wins as tiebreaker.
+
+**Skills** are merged as the **union** across all sources (not pick-winner).
+
+---
 
 ## Supported Sources
 
@@ -165,70 +225,6 @@ Using the **exact example config from the assignment** (`config/custom_config.js
 Note: `primary_email` is remapped from `emails[0]`, `skills` from `skills[].name` — **same engine, no code changes, just a different config file.**
 
 ---
-
-## Edge Cases Handled (10 total — all tested)
-
-| # | Scenario | Handling | Test |
-|---|----------|----------|------|
-| 1 | **Missing source file** | Pipeline continues, unaffected fields stay null | `test_edge_cases.py::TestEdgeCase1` |
-| 2 | **Duplicate candidate, different name spellings** | Merged via email match; CSV name wins | `test_edge_cases.py::TestEdgeCase2` |
-| 3 | **Conflicting field values across sources** | Source priority picks winner; confidence drops by 0.15 | `test_edge_cases.py::TestEdgeCase3` |
-| 4 | **Phone without country code** | Defaults to US region via phonenumbers; null if invalid | `test_edge_cases.py::TestEdgeCase4` |
-| 5 | **Malformed/garbage ATS JSON** | Catches JSONDecodeError, skips bad records, logs error | `test_edge_cases.py::TestEdgeCase5` |
-| 6 | **Unicode/international names (CJK, accents)** | Preserved correctly through normalization | `test_edge_cases.py::TestEdgeCase6` |
-| 7 | **Empty/null skills list** | Treated as no skills, doesn't crash | `test_edge_cases.py::TestEdgeCase7` |
-| 8 | **Three-way field conflict** | Highest-priority source wins; conflict tracked | `test_edge_cases.py::TestEdgeCase8` |
-| 9 | **Skills union across sources** | All unique skills merged, not pick-winner | `test_edge_cases.py::TestEdgeCase9` |
-| 10 | **Phone formats merge (E.164)** | Different formats normalized, then matched | `test_edge_cases.py::TestEdgeCase10` |
-
-
----
-<img width="1567" height="906" alt="image" src="https://github.com/user-attachments/assets/e986a01f-14e0-4009-b1f9-72187153971b" />
-
-## Confidence Scoring
-
-```
-field_confidence = base_weight(source) × method_modifier + corroboration_bonus − conflict_penalty
-```
-
-| Parameter | Values |
-|-----------|--------|
-| **Source weights** | csv=0.80, ats_json=0.85, github=0.70, linkedin=0.90, resume=0.60, notes=0.40 |
-| **Method modifiers** | structured_parse=1.0, api=0.95, regex=0.80, heuristic=0.60 |
-| **Corroboration bonus** | +0.10 per additional agreeing source (capped at +0.30) |
-| **Conflict penalty** | −0.15 when sources disagree |
-| **Overall confidence** | Weighted average by field importance (emails=2.0, full_name=1.5, skills=1.3, ...) |
-
----
-
-## Data Normalization (6 normalizers)
-
-All normalizers are **pure functions** — no side effects, return `None` on unparseable input, independently unit-testable.
-
-| Field | Library | Before (raw) | After (normalized) |
-|-------|---------|-------------|--------------------|
-| Phone | `phonenumbers` | `(415) 555-0101` | `+14155550101` (E.164) |
-| Country | `pycountry` | `United States` / `USA` / `US` | `US` (ISO-3166 alpha-2) |
-| Date | `python-dateutil` | `Jan 2024` / `2024-01-15` | `2024-01` (YYYY-MM) |
-| Skills | `rapidfuzz` | `js` / `k8s` / `postgres` | `JavaScript` / `Kubernetes` / `PostgreSQL` |
-| Email | built-in | `Alice@Example.COM` | `alice@example.com` |
-| Name | built-in | `alice  chen` | `Alice Chen` (title case) |
-
----
-
-## Merge / Entity Resolution
-
-**Match cascade** (strongest signal first):
-1. **Email** — exact match (case-insensitive)
-2. **Phone** — normalized E.164 exact match
-3. **Fuzzy name + company** — rapidfuzz WRatio ≥ 85
-
-**Conflict resolution:** Source priority order (`csv > ats_json > github > linkedin > resume > notes`), with most-recent-wins as tiebreaker.
-
-**Skills** are merged as the **union** across all sources (not pick-winner).
-
----
-
 
 ## Canonical Profile Schema
 
