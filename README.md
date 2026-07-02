@@ -4,18 +4,20 @@
 ![Pydantic](https://img.shields.io/badge/Pydantic-v2-E92063?style=for-the-badge&logo=pydantic&logoColor=white)
 
 
-A production-quality ETL pipeline that ingests candidate data from **multiple heterogeneous sources** (structured + unstructured), normalizes formats, merges duplicate candidates via entity resolution, scores confidence in each data point, and projects configurable output views — all driven by a runtime config with **zero code changes**.
+A production-quality ETL pipeline that ingests candidate data from **multiple heterogeneous sources** (structured + unstructured) like CSV, ATS JSON exports, GitHub APIs, PDF/DOCX resumes, mocked LinkedIn JSON, and unstructured recruiter notes, normalizes formats, merges duplicate candidates via entity resolution, scores confidence in each data point, and projects configurable output views — all driven by a runtime config with **zero code changes**.
+
 
 ## Architecture — 7-Stage Pipeline
 
 ```
-┌─────────┐   ┌─────────┐   ┌─────────┐   ┌──────────────┐   ┌─────────┐   ┌─────────┐   ┌─────────┐
-│ INGEST  │──▶│  PARSE  │──▶│ CLEANSE │──▶│   RESOLVE    │──▶│  SCORE  │──▶│ RESHAPE │──▶│ CERTIFY │
-│(route to│   │(emit    │   │(pure fn │   │(cluster +    │   │(trust   │   │(config  │   │(schema  │
-│ parser) │   │ RawField│   │ per-type│   │ fuse + build │   │ formula)│   │ lens)   │   │ guard)  │
-└─────────┘   │ tuples) │   │ no-throw│   │ nested canon)│   └─────────┘   └─────────┘   └─────────┘
-              └─────────┘   └─────────┘   └──────────────┘
+┌───────────┐   ┌────────────┐   ┌────────────┐   ┌────────────────┐   ┌────────────┐   ┌───────────┐   ┌───────────┐
+│  INGEST   │──▶│   PARSE    │──▶│  CLEANSE   │──▶│    RESOLVE     │──▶│   SCORE    │──▶│  RESHAPE  │──▶│  CERTIFY  │
+│(Route file│   │(Emit flat  │   │(Normalize  │   │(Merge dupes &  │   │(Calculate  │   │(Project   │   │(Validate  │
+│ to correct│   │ RawFields) │   │ data fields│   │ build nested   │   │ confidence │   │ via custom│   │ output    │
+│ extractor)│   │            │   │ safely)    │   │ canonical doc) │   │ formula)   │   │ config)   │   │ schema)   │
+└───────────┘   └────────────┘   └────────────┘   └────────────────┘   └────────────┘   └───────────┘   └───────────┘
 ```
+---
 ---
 
 ## Pipeline Stages
